@@ -1,0 +1,23 @@
+Form Name: TblPallet subform
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: TblPallet
+  Has Module: True
+  Default View: Datasheet
+
+CONTROLS:
+  - PalletNo (TextBox)
+      Control Source: PalletNo
+  - Description (TextBox)
+      Control Source: Description
+  - PalletNo_Label (Label)
+  - Description_Label (Label)
+  - Complete_Label (Label)
+  - Complete (ComboBox)
+      Control Source: Complete
+      Row Source: "Y";"N"
+
+VBA CODE:
+----------------------------------------------------------------------

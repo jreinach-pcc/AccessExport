@@ -1,0 +1,15 @@
+Form Name: SubFrmDispatchLoginCount
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: QryDispatchLoginInputCount
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - InputCount (TextBox)
+      Control Source: InputCount
+
+VBA CODE:
+----------------------------------------------------------------------

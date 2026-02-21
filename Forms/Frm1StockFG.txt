@@ -1,0 +1,143 @@
+Form Name: Frm1StockFG
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - Label1 (Label)
+  - Label2 (Label)
+  - Label3 (Label)
+  - Label4 (Label)
+  - Label6 (Label)
+  - Label8 (Label)
+  - txtQty1 (TextBox)
+      Control Source: 
+  - txtQty2 (TextBox)
+      Control Source: 
+  - txtQty3 (TextBox)
+      Control Source: 
+  - txtQty4 (TextBox)
+      Control Source: 
+  - txtRevision (TextBox)
+      Control Source: 
+  - btnLblPrint (CommandButton)
+  - cboStockedBy (ComboBox)
+      Control Source: 
+      Row Source: 'G.G';'E.V.';'MAC';'C.J.';'RZ'
+  - Label34 (Label)
+  - Line1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & " - " & [Type1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & " - " & [Type2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & " - " & [Type3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & " - " & [Type4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & "-" & [Type1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & "-" & [Type2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & "-" & [Type3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & "-" & [Type4] & ",")
+  - Label49 (Label)
+  - Label50 (Label)
+  - Label51 (Label)
+  - Label52 (Label)
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label54 (Label)
+  - Label55 (Label)
+  - Label57 (Label)
+  - txtJob (TextBox)
+      Control Source: 
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnRptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - txtDateStocked (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - PrinterSelection (OptionGroup)
+  - LabelforOption (Label)
+  - Option88 (OptionButton)
+  - Label89 (Label)
+  - Option90 (OptionButton)
+  - Label91 (Label)
+  - txtBin1 (TextBox)
+      Control Source: 
+  - txtBin2 (TextBox)
+      Control Source: 
+  - txtBin3 (TextBox)
+      Control Source: 
+  - txtBin4 (TextBox)
+      Control Source: 
+  - Label96 (Label)
+  - txtNoBox1 (TextBox)
+      Control Source: 
+  - txtNoBox2 (TextBox)
+      Control Source: 
+  - txtNoBox3 (TextBox)
+      Control Source: 
+  - txtNoBox4 (TextBox)
+      Control Source: 
+  - txtQtyTotal (TextBox)
+      Control Source: =[txtQty1]+[txtQty2]+[txtQty3]+[txtQty4]+[txtQty5]+[txtQty6]
+  - txtNoBoxTotal (TextBox)
+      Control Source: =[txtNoBox1]+[txtNoBox2]+[txtNoBox3]+[txtNoBox4]+[txtNoBox5]+[txtNoBox6]
+  - Label99 (Label)
+  - txtStockCode (TextBox)
+      Control Source: 
+  - Label101 (Label)
+  - txtWarehouse (TextBox)
+      Control Source: 
+  - btnGetRecord (CommandButton)
+  - Label104 (Label)
+  - txtLot (TextBox)
+      Control Source: 
+  - btnLblReprint (CommandButton)
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - btnClear (CommandButton)
+  - Label112 (Label)
+  - Label113 (Label)
+  - Label117 (Label)
+  - Label118 (Label)
+  - txtQty5 (TextBox)
+      Control Source: 
+  - txtQty6 (TextBox)
+      Control Source: 
+  - Label121 (Label)
+  - Label122 (Label)
+  - txtBin5 (TextBox)
+      Control Source: 
+  - txtBin6 (TextBox)
+      Control Source: 
+  - txtNoBox5 (TextBox)
+      Control Source: 
+  - txtNoBox6 (TextBox)
+      Control Source: 
+  - Line127 (Line)
+  - btnCancel (CommandButton)
+  - Label115 (Label)
+  - txtDateCancelled (TextBox)
+      Control Source: 
+  - Label106 (Label)
+  - ChkCancel (CheckBox)
+  - btnUnCancel (CommandButton)
+
+VBA CODE:
+----------------------------------------------------------------------

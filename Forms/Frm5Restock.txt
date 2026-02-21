@@ -1,0 +1,128 @@
+Form Name: Frm5Restock
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - Label1 (Label)
+  - Label2 (Label)
+  - Label3 (Label)
+  - Label4 (Label)
+  - Label6 (Label)
+  - Label8 (Label)
+  - txtQty1 (TextBox)
+      Control Source: 
+  - txtQty2 (TextBox)
+      Control Source: 
+  - txtQty3 (TextBox)
+      Control Source: 
+  - txtQty4 (TextBox)
+      Control Source: 
+  - txtLot (TextBox)
+      Control Source: 
+  - txtStockedBy (ComboBox)
+      Control Source: 
+      Row Source: 'G.G';'E.V.';'MAC';'C.J.';'RZ'
+  - Label34 (Label)
+  - Line1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & " - " & [Type1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & " - " & [Type2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & " - " & [Type3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & " - " & [Type4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & "-" & [Type1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & "-" & [Type2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & "-" & [Type3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & "-" & [Type4] & ",")
+  - Label49 (Label)
+  - Label50 (Label)
+  - Label51 (Label)
+  - Label52 (Label)
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label54 (Label)
+  - Label55 (Label)
+  - Label57 (Label)
+  - txtDispatchNote (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - txtDateRestocked (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - PrinterSelection (OptionGroup)
+  - LabelforOption (Label)
+  - Option88 (OptionButton)
+  - Label89 (Label)
+  - Option90 (OptionButton)
+  - Label91 (Label)
+  - txtBin1 (TextBox)
+      Control Source: 
+  - txtBin2 (TextBox)
+      Control Source: 
+  - txtBin3 (TextBox)
+      Control Source: 
+  - txtBin4 (TextBox)
+      Control Source: 
+  - Label96 (Label)
+  - txtNoBox1 (TextBox)
+      Control Source: 
+  - txtNoBox2 (TextBox)
+      Control Source: 
+  - txtNoBox3 (TextBox)
+      Control Source: 
+  - txtNoBox4 (TextBox)
+      Control Source: 
+  - txtQtyTotal (TextBox)
+      Control Source: =[txtQty1]+[txtQty2]+[txtQty3]+[txtQty4]+[txtQty5]+[txtQty6]
+  - txtNoBoxTotal (TextBox)
+      Control Source: =[txtNoBox1]+[txtNoBox2]+[txtNoBox3]+[txtNoBox4]+[NoBox5]+[NoBox6]
+  - Label99 (Label)
+  - txtCustomerRequestDate (TextBox)
+      Control Source: 
+  - txtRemarks (TextBox)
+      Control Source: 
+  - Label102 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - btnLblPrint (CommandButton)
+  - btnReturn (CommandButton)
+  - btnLblReprint (CommandButton)
+  - btnClear (CommandButton)
+  - btnGetRecord (CommandButton)
+  - Label103 (Label)
+  - Label104 (Label)
+  - txtQty5 (TextBox)
+      Control Source: 
+  - txtQty6 (TextBox)
+      Control Source: 
+  - Label107 (Label)
+  - Label108 (Label)
+  - txtBin5 (TextBox)
+      Control Source: 
+  - txtBin6 (TextBox)
+      Control Source: 
+  - txtNoBox5 (TextBox)
+      Control Source: 
+  - txtNoBox6 (TextBox)
+      Control Source: 
+
+VBA CODE:
+----------------------------------------------------------------------

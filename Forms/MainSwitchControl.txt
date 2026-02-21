@@ -1,0 +1,50 @@
+Form Name: MainSwitchControl
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: SwitchItems
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - Label2 (Label)
+  - Option1 (CommandButton)
+  - OptionLabel1 (Label)
+  - HorizontalHeaderBox (Rectangle)
+  - Label1 (Label)
+  - Option2 (CommandButton)
+  - OptionLabel2 (Label)
+  - Option3 (CommandButton)
+  - OptionLabel3 (Label)
+  - Option4 (CommandButton)
+  - OptionLabel4 (Label)
+  - Option5 (CommandButton)
+  - OptionLabel5 (Label)
+  - Option6 (CommandButton)
+  - OptionLabel6 (Label)
+  - Option7 (CommandButton)
+  - OptionLabel7 (Label)
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Label247 (Label)
+  - txtBillOfLadingEverett (TextBox)
+      Control Source: 
+  - Label34 (Label)
+  - txtBillOfLadingRenton (TextBox)
+      Control Source: 
+  - Label36 (Label)
+  - txtBillOfLadingSpares (TextBox)
+      Control Source: 
+  - Label38 (Label)
+  - txtBillOfLading787 (TextBox)
+      Control Source: 
+  - Label43 (Label)
+  - txtBillOfLadingSpirit (TextBox)
+      Control Source: 
+  - Label45 (Label)
+  - txtBillOfLading787SC (TextBox)
+      Control Source: 
+
+VBA CODE:
+----------------------------------------------------------------------

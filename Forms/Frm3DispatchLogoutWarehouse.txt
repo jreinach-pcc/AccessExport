@@ -1,0 +1,58 @@
+Form Name: Frm3DispatchLogoutWarehouse
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label55 (Label)
+  - Label65 (Label)
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnLogRptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - txtDateLog (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - btnLog (CommandButton)
+  - Label106 (Label)
+  - Label108 (Label)
+  - Frame109 (OptionGroup)
+  - Label110 (Label)
+  - txtCheckDateLog (TextBox)
+      Control Source: 
+  - btnCheckLog (CommandButton)
+  - txtLogDispatchNote (TextBox)
+      Control Source: 
+  - txtCheckDispatchNote (TextBox)
+      Control Source: 
+  - btnDelete (CommandButton)
+  - SubFrmDispatchLogoutCount (SubForm)
+  - Label114 (Label)
+  - txtLogEmpID (TextBox)
+      Control Source: 
+  - txtCheckEmpID (TextBox)
+      Control Source: 
+  - Label115 (Label)
+  - txtLastDispatchNote (TextBox)
+      Control Source: 
+  - Label117 (Label)
+  - Label118 (Label)
+
+VBA CODE:
+----------------------------------------------------------------------

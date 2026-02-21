@@ -1,0 +1,265 @@
+Form Name: Frm7PackingSlip
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - SuperUser (TextBox)
+      Control Source: 
+  - txtUom (TextBox)
+      Control Source: 
+  - Label1 (Label)
+  - Label2 (Label)
+  - Label3 (Label)
+  - Label4 (Label)
+  - Label6 (Label)
+  - txtQty1 (TextBox)
+      Control Source: 
+  - txtQty2 (TextBox)
+      Control Source: 
+  - txtQty3 (TextBox)
+      Control Source: 
+  - txtQty4 (TextBox)
+      Control Source: 
+  - btnPSPrint (CommandButton)
+  - Label34 (Label)
+  - Line1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & " - " & [cboType1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & " - " & [cboType2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & " - " & [cboType3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & " - " & [cboType4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & "-" & [cboType1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & "-" & [cboType2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & "-" & [cboType3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & "-" & [cboType4] & ",")
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label54 (Label)
+  - Label55 (Label)
+  - txtDispatchNote (TextBox)
+      Control Source: 
+  - btnHold (CommandButton)
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnExceptionRptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - txtDateArrive (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - txtNoBox2 (TextBox)
+      Control Source: 
+  - txtNoBox3 (TextBox)
+      Control Source: 
+  - txtNoBox4 (TextBox)
+      Control Source: 
+  - txtQtyTotal (TextBox)
+      Control Source: =[txtNoBox1]*[txtQty1]+[txtNoBox2]*[txtQty2]+[txtNoBox3]*[txtQty3]+[txtNoBox4]*[txtQty4]
+  - txtNoBoxTotal (TextBox)
+      Control Source: =[txtNoBox1]+[txtNoBox2]+[txtNoBox3]+[txtNoBox4]
+  - Label99 (Label)
+  - txtStockCode (TextBox)
+      Control Source: 
+  - btnGetRecord (CommandButton)
+  - Label104 (Label)
+  - btnPSReprint (CommandButton)
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - btnClear (CommandButton)
+  - Label112 (Label)
+  - Label115 (Label)
+  - txtDateHeld (TextBox)
+      Control Source: 
+  - FormSelection (OptionGroup)
+  - Label93 (Label)
+  - Option94 (OptionButton)
+  - Label95 (Label)
+  - Option96 (OptionButton)
+  - Label97 (Label)
+  - Label7 (Label)
+  - txtTotalWt (TextBox)
+      Control Source: 
+  - Label134 (Label)
+  - cboType1 (ComboBox)
+      Control Source: 
+      Row Source: SELECT Tbl_BoxSize.BoxSize FROM Tbl_BoxSize; 
+  - cboType2 (ComboBox)
+      Control Source: 
+      Row Source: TblBoxSize
+  - cboType3 (ComboBox)
+      Control Source: 
+      Row Source: TblBoxSize
+  - cboType4 (ComboBox)
+      Control Source: 
+      Row Source: TblBoxSize
+  - Label0 (Label)
+  - Label135 (Label)
+  - txtDateShip (TextBox)
+      Control Source: 
+  - Label136 (Label)
+  - cboCarrier (ComboBox)
+      Control Source: 
+      Row Source: SELECT Carrier FROM dbo_TblCarrier; 
+  - Label139 (Label)
+  - PO (Label)
+  - Label143 (Label)
+  - txtShipTo (TextBox)
+      Control Source: 
+  - Label145 (Label)
+  - txtShipToAddr1 (TextBox)
+      Control Source: 
+  - Label147 (Label)
+  - txtShipToAddr2 (TextBox)
+      Control Source: 
+  - Label151 (Label)
+  - txtShipToAddr3 (TextBox)
+      Control Source: 
+  - Label167 (Label)
+  - txtSoldTo (TextBox)
+      Control Source: 
+  - Label169 (Label)
+  - txtSoldToAddr1 (TextBox)
+      Control Source: 
+  - Label171 (Label)
+  - txtSoldToAddr2 (TextBox)
+      Control Source: 
+  - Label175 (Label)
+  - txtSoldToAddr3 (TextBox)
+      Control Source: 
+  - txtSoldToState (TextBox)
+      Control Source: 
+  - txtSoldToPostalCode (TextBox)
+      Control Source: 
+  - Label181 (Label)
+  - Label183 (Label)
+  - Label185 (Label)
+  - txtStockCodeDes (TextBox)
+      Control Source: 
+  - Label187 (Label)
+  - Label189 (Label)
+  - Label191 (Label)
+  - txtSCAC (TextBox)
+      Control Source: 
+  - Label193 (Label)
+  - Label195 (Label)
+  - txtCustomer (TextBox)
+      Control Source: 
+  - cboPOLine (ComboBox)
+      Control Source: 
+      Row Source: '1';'2';'3';'4';'5';'6';'7';'8';'9';'10'
+  - btnASNLblPrint (CommandButton)
+  - btnASNLblReprint (CommandButton)
+  - Label199 (Label)
+  - Label201 (Label)
+  - cboSourceAccepted (ComboBox)
+      Control Source: 
+      Row Source: "Y";"N"
+  - Frame205 (OptionGroup)
+  - Label206 (Label)
+  - Frame207 (OptionGroup)
+  - Label208 (Label)
+  - Label222 (Label)
+  - txtRevision (TextBox)
+      Control Source: 
+  - Label224 (Label)
+  - Frame226 (OptionGroup)
+  - Label227 (Label)
+  - cboTSO (ComboBox)
+      Control Source: 
+      Row Source: '';'TSO-C148'
+  - Label106 (Label)
+  - ChkHold (CheckBox)
+  - btnUnHold (CommandButton)
+  - txtWt1 (TextBox)
+      Control Source: 
+  - txtWt2 (TextBox)
+      Control Source: 
+  - txtWt3 (TextBox)
+      Control Source: 
+  - txtWt4 (TextBox)
+      Control Source: 
+  - Label241 (Label)
+  - cboShippedBy (ComboBox)
+      Control Source: 
+      Row Source: 'E.V.';'G.G.';'MRT';'R.Z.';'A.G.';'E.M.';'CHRIST';'DAVE'
+  - txtLot (TextBox)
+      Control Source: 
+  - txtSalesOrder (TextBox)
+      Control Source: 
+  - txtRoyalCode (TextBox)
+      Control Source: 
+  - txtTerms (TextBox)
+      Control Source: 
+  - txtPO (TextBox)
+      Control Source: 
+  - txtShipVia (TextBox)
+      Control Source: 
+  - txtOrderQty (TextBox)
+      Control Source: 
+  - txtShipQty (TextBox)
+      Control Source: 
+  - txtShipToCity (TextBox)
+      Control Source: 
+  - txtShipToState (TextBox)
+      Control Source: 
+  - txtShipToPostalCode (TextBox)
+      Control Source: 
+  - txtSoldToCity (TextBox)
+      Control Source: 
+  - Line114 (Line)
+  - txtWtSum (TextBox)
+      Control Source: =[txtNoBox1]*[txtWt1]+[txtNoBox2]*[txtWt2]+[txtNoBox3]*[txtWt3]+[txtNoBox4]*[txtWt4]
+  - Label247 (Label)
+  - txtBillOfLading (TextBox)
+      Control Source: 
+  - btnBarLblPrint (CommandButton)
+  - btnBarLblReprint (CommandButton)
+  - Label253 (Label)
+  - Label254 (Label)
+  - txtMCustRequestDat (TextBox)
+      Control Source: 
+  - Label256 (Label)
+  - cboNDTestSpec (ComboBox)
+      Control Source: 
+      Row Source: '';'E1417';'E1444'
+  - Label258 (Label)
+  - cboNDTestSampleSize (ComboBox)
+      Control Source: 
+      Row Source: '';'SAMPLE';'100%'
+  - Label149 (Label)
+  - Label163 (Label)
+  - Label165 (Label)
+  - Label173 (Label)
+  - Label177 (Label)
+  - Label179 (Label)
+  - Label266 (Label)
+  - CboDivisionCode (ComboBox)
+      Control Source: 
+      Row Source: TblDivisionCode
+  - txtScheduleB (TextBox)
+      Control Source: 
+  - Label268 (Label)
+  - txtECCN (TextBox)
+      Control Source: 
+  - Label270 (Label)
+
+VBA CODE:
+----------------------------------------------------------------------

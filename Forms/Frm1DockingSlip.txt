@@ -1,0 +1,140 @@
+Form Name: Frm1DockingSlip
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - Label8 (Label)
+  - txtCustomer (TextBox)
+      Control Source: 
+  - btnPrint (CommandButton)
+  - txtReceivedBy (ComboBox)
+      Control Source: 
+      Row Source: SELECT UserName FROM dbo_TblDockingEmployee; 
+  - Line1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & " - " & [Type1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & " - " & [Type2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & " - " & [Type3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & " - " & [Type4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([txtNoBox1]>0,[txtNoBox1] & "-" & [Type1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([txtNoBox2]>0,[txtNoBox2] & "-" & [Type2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([txtNoBox3]>0,[txtNoBox3] & "-" & [Type3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([txtNoBox4]>0,[txtNoBox4] & "-" & [Type4] & ",")
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label54 (Label)
+  - Label55 (Label)
+  - Label57 (Label)
+  - txtJob (TextBox)
+      Control Source: 
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnRptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - txtDateTimeReceived (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnExit (CommandButton)
+  - Label99 (Label)
+  - txtStockCode (TextBox)
+      Control Source: 
+  - Label101 (Label)
+  - txtWarehouse (TextBox)
+      Control Source: 
+  - btnGetRecord (CommandButton)
+  - Label104 (Label)
+  - txtLot (TextBox)
+      Control Source: 
+  - btnReprint (CommandButton)
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - btnClear (CommandButton)
+  - btnDelete (CommandButton)
+  - CustomerName (Label)
+  - txtCustomerName (TextBox)
+      Control Source: 
+  - txtGrossQty (TextBox)
+      Control Source: 
+  - Label141 (Label)
+  - txtPansReceived (TextBox)
+      Control Source: 
+  - Label143 (Label)
+  - Label1 (Label)
+  - Label2 (Label)
+  - Label3 (Label)
+  - Label4 (Label)
+  - Label6 (Label)
+  - txtQty1 (TextBox)
+      Control Source: 
+  - txtQty2 (TextBox)
+      Control Source: 
+  - txtQty3 (TextBox)
+      Control Source: 
+  - txtQty4 (TextBox)
+      Control Source: 
+  - Label34 (Label)
+  - Label49 (Label)
+  - Label50 (Label)
+  - Label51 (Label)
+  - Label52 (Label)
+  - txtBin1 (TextBox)
+      Control Source: 
+  - txtBin2 (TextBox)
+      Control Source: 
+  - txtBin3 (TextBox)
+      Control Source: 
+  - txtBin4 (TextBox)
+      Control Source: 
+  - Label96 (Label)
+  - txtNoBox1 (TextBox)
+      Control Source: 
+  - txtNoBox2 (TextBox)
+      Control Source: 
+  - txtNoBox3 (TextBox)
+      Control Source: 
+  - txtNoBox4 (TextBox)
+      Control Source: 
+  - txtQtyTotal (TextBox)
+      Control Source: =[txtNoBox1]*[txtQty1]+[txtNoBox2]*[txtQty2]+[txtNoBox3]*[txtQty3]+[txtNoBox4]*[txtQty4]+[txtNoBox5]*[txtQty5]
+  - txtNoBoxTotal (TextBox)
+      Control Source: =[txtNoBox1]+[txtNoBox2]+[txtNoBox3]+[txtNoBox4]+[txtNoBox5]
+  - Label112 (Label)
+  - Label113 (Label)
+  - Label117 (Label)
+  - txtQty5 (TextBox)
+      Control Source: 
+  - Label121 (Label)
+  - txtBin5 (TextBox)
+      Control Source: 
+  - txtNoBox5 (TextBox)
+      Control Source: 
+  - Line127 (Line)
+  - txtStockedBy (ComboBox)
+      Control Source: 
+      Row Source: SELECT UserName FROM dbo_TblDockingEmployee; 
+  - Label148 (Label)
+  - Frame226 (OptionGroup)
+  - Label227 (Label)
+  - btnBoxLblPrint (CommandButton)
+  - txtBoxSequence (TextBox)
+      Control Source: 
+  - Label150 (Label)
+
+VBA CODE:
+----------------------------------------------------------------------

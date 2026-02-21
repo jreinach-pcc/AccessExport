@@ -1,0 +1,91 @@
+Form Name: Frm12Fedex
+Date Exported: 2/21/2026 9:53:57 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnFedexPORptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - FormSelection (OptionGroup)
+  - Label93 (Label)
+  - Option146 (OptionButton)
+  - Label147 (Label)
+  - Option138 (OptionButton)
+  - Label139 (Label)
+  - Option148 (OptionButton)
+  - Label149 (Label)
+  - Option1 (OptionButton)
+  - OptionLabel1 (Label)
+  - Option140 (OptionButton)
+  - Label141 (Label)
+  - Option2 (OptionButton)
+  - OptionLabel2 (Label)
+  - Option184 (OptionButton)
+  - Label185 (Label)
+  - Option3 (OptionButton)
+  - OptionLabel3 (Label)
+  - Option142 (OptionButton)
+  - Label143 (Label)
+  - Option186 (OptionButton)
+  - Label187 (Label)
+  - Option4 (OptionButton)
+  - OptionLabel4 (Label)
+  - Option144 (OptionButton)
+  - Label145 (Label)
+  - Option188 (OptionButton)
+  - Label189 (Label)
+  - Option5 (OptionButton)
+  - OptionLabel5 (Label)
+  - Option195 (OptionButton)
+  - Label196 (Label)
+  - Option6 (OptionButton)
+  - OptionLabel6 (Label)
+  - Option136 (OptionButton)
+  - Label137 (Label)
+  - Option179 (OptionButton)
+  - Label180 (Label)
+  - Frame134 (OptionGroup)
+  - Label135 (Label)
+  - cboShipToAddr1 (ComboBox)
+      Control Source: 
+      Row Source: SELECT DISTINCT Shipaddr1 FROM tblShipAddr; 
+  - cboCustomer (ComboBox)
+      Control Source: 
+      Row Source: SELECT DISTINCT Customer, Name FROM tblOption; 
+  - btnFedexPORptPreview2 (CommandButton)
+  - Label174 (Label)
+  - Label176 (Label)
+  - Frame177 (OptionGroup)
+  - Label178 (Label)
+  - btnBE (CommandButton)
+  - Label190 (Label)
+  - CboCustomer4 (ComboBox)
+      Control Source: 
+      Row Source: SELECT DISTINCT Customer, Name FROM dbo_ArCustomer ORDER BY Customer; 
+  - Label192 (Label)
+  - btnFedexPORptPreview4 (CommandButton)
+  - cboShipToState (ComboBox)
+      Control Source: 
+      Row Source: SELECT ShipToState FROM dbo_TblShipToState WHERE CustomerName= 'KLX'; 
+  - Label198 (Label)
+  - Frame199 (OptionGroup)
+
+VBA CODE:
+----------------------------------------------------------------------

@@ -1,0 +1,81 @@
+Form Name: Frm2DispatchReceive
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - btnClear (CommandButton)
+  - Line1 (TextBox)
+      Control Source: =IIf([NoBox1]>0,[NoBox1] & " - " & [Type1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([NoBox2]>0,[NoBox2] & " - " & [Type2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([NoBox3]>0,[NoBox3] & " - " & [Type3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([NoBox4]>0,[NoBox4] & " - " & [Type4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([NoBox1]>0,[NoBox1] & "-" & [Type1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([NoBox2]>0,[NoBox2] & "-" & [Type2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([NoBox3]>0,[NoBox3] & "-" & [Type3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([NoBox4]>0,[NoBox4] & "-" & [Type4] & ",")
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label54 (Label)
+  - Label55 (Label)
+  - txtDispatchNote (TextBox)
+      Control Source: 
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - btnRptPreview (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - txtCustomerRequestDate (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - Label99 (Label)
+  - txtStockCode (TextBox)
+      Control Source: 
+  - Label101 (Label)
+  - txtWarehouse (TextBox)
+      Control Source: 
+  - btnGetRecord (CommandButton)
+  - txtStatus (TextBox)
+      Control Source: 
+  - Label109 (Label)
+  - Label110 (Label)
+  - txtCustomer (TextBox)
+      Control Source: 
+  - Label112 (Label)
+  - txtCustomerName (TextBox)
+      Control Source: 
+  - Label114 (Label)
+  - txtDateReceived (TextBox)
+      Control Source: 
+  - Label118 (Label)
+  - btnReceive (CommandButton)
+  - btnCancel (CommandButton)
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Label115 (Label)
+  - txtDateCancelled (TextBox)
+      Control Source: 
+  - Label106 (Label)
+  - ChkCancel (CheckBox)
+  - btnUnCancel (CommandButton)
+
+VBA CODE:
+----------------------------------------------------------------------

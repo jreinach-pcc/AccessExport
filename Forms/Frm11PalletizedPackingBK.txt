@@ -1,0 +1,32 @@
+Form Name: Frm11PalletizedPackingBK
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label65 (Label)
+  - Frame67 (OptionGroup)
+  - Label68 (Label)
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - btnLog (CommandButton)
+  - Label108 (Label)
+  - Frame109 (OptionGroup)
+  - Label110 (Label)
+  - btnCheckLog (CommandButton)
+  - txtLogDispatchNote (TextBox)
+      Control Source: 
+  - txtCheckDispatchNote (TextBox)
+      Control Source: 
+  - btnDelete (CommandButton)
+
+VBA CODE:
+----------------------------------------------------------------------

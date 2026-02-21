@@ -1,0 +1,42 @@
+Form Name: Frm10BillOfLading
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: TblShippingRecords
+  Has Module: True
+  Default View: Continuous Forms
+
+CONTROLS:
+  - DateShip_Label (Label)
+  - Customer_Label (Label)
+  - DispatchNote_Label (Label)
+  - BillOfLading_Label (Label)
+  - Label10 (Label)
+  - Label11 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - txtDateShip (TextBox)
+      Control Source: 
+  - btnReturn (CommandButton)
+  - CboCompany (ComboBox)
+      Control Source: 
+      Row Source: "BOEING";"SPIRIT"
+  - Label17 (Label)
+  - Label18 (Label)
+  - DateShip (TextBox)
+      Control Source: DateShip
+  - Customer (TextBox)
+      Control Source: Customer
+  - DispatchNote (TextBox)
+      Control Source: DispatchNote
+  - BillOfLading (TextBox)
+      Control Source: BillOfLading
+  - Hold (CheckBox)
+  - DateCancelled (TextBox)
+      Control Source: DateHeld
+  - ASN (CheckBox)
+
+VBA CODE:
+----------------------------------------------------------------------

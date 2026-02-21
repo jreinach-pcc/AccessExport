@@ -1,0 +1,30 @@
+Form Name: Frm8ASNFiles
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - btnBoeingASNFiles (CommandButton)
+  - btnBoeingASN2Files (CommandButton)
+  - btnSpiritASNFiles (CommandButton)
+
+VBA CODE:
+----------------------------------------------------------------------

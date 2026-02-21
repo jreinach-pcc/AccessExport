@@ -1,0 +1,82 @@
+Form Name: Frm10DispatchDetails
+Date Exported: 2/21/2026 9:53:56 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: 
+  Has Module: True
+  Default View: Single Form
+
+CONTROLS:
+  - Label8 (Label)
+  - txtRevision (TextBox)
+      Control Source: 
+  - txtStockedBy (ComboBox)
+      Control Source: 
+      Row Source: 'G.G';'E.V.';'MAC';'C.J.';'RZ'
+  - Line1 (TextBox)
+      Control Source: =IIf([NoBox1]>0,[NoBox1] & " - " & [Type1] & " - " & Trim([txtQty1]) & " PCS")
+  - Line2 (TextBox)
+      Control Source: =IIf([NoBox2]>0,[NoBox2] & " - " & [Type2] & " - " & Trim([txtQty2]) & " PCS")
+  - Line3 (TextBox)
+      Control Source: =IIf([NoBox3]>0,[NoBox3] & " - " & [Type3] & " - " & Trim([txtQty3]) & " PCS")
+  - Line4 (TextBox)
+      Control Source: =IIf([NoBox4]>0,[NoBox4] & " - " & [Type4] & " - " & Trim([txtQty4]) & " PCS")
+  - TCTR1 (TextBox)
+      Control Source: =IIf([NoBox1]>0,[NoBox1] & "-" & [Type1])
+  - TCTR2 (TextBox)
+      Control Source: =IIf([NoBox2]>0,[NoBox2] & "-" & [Type2] & ",")
+  - TCTR3 (TextBox)
+      Control Source: =IIf([NoBox3]>0,[NoBox3] & "-" & [Type3] & ",")
+  - TCTR4 (TextBox)
+      Control Source: =IIf([NoBox4]>0,[NoBox4] & "-" & [Type4] & ",")
+  - HorizontalHeaderBox (Rectangle)
+  - Label31 (Label)
+  - Label55 (Label)
+  - Label57 (Label)
+  - txtJobNo (TextBox)
+      Control Source: 
+  - Label65 (Label)
+  - Label72 (Label)
+  - Frame73 (OptionGroup)
+  - Label74 (Label)
+  - Label75 (Label)
+  - cmdPrintException (CommandButton)
+  - txtFromDate (TextBox)
+      Control Source: 
+  - txtToDate (TextBox)
+      Control Source: 
+  - Current Date (TextBox)
+      Control Source: =Date()
+  - txtDateStocked (TextBox)
+      Control Source: 
+  - Label83 (Label)
+  - btnReturn (CommandButton)
+  - PrinterSelection (OptionGroup)
+  - LabelforOption (Label)
+  - Option88 (OptionButton)
+  - Label89 (Label)
+  - Option90 (OptionButton)
+  - Label91 (Label)
+  - Label99 (Label)
+  - txtStockCode (TextBox)
+      Control Source: 
+  - Label101 (Label)
+  - txtWhse (TextBox)
+      Control Source: 
+  - cmdGetRecord (CommandButton)
+  - Label104 (Label)
+  - Text105 (TextBox)
+      Control Source: 
+  - Label106 (Label)
+  - Text107 (TextBox)
+      Control Source: 
+  - Label108 (Label)
+  - Text109 (TextBox)
+      Control Source: 
+  - Label110 (Label)
+  - Text111 (TextBox)
+      Control Source: 
+
+VBA CODE:
+----------------------------------------------------------------------
