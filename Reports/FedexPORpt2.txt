@@ -1,0 +1,8 @@
+Report Name: FedexPORpt2
+Date Exported: 2/21/2026 9:54:39 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: QryFedexPORpt2
+  Has Module: False
+

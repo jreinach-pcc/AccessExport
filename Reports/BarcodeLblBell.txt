@@ -1,0 +1,8 @@
+Report Name: BarcodeLblBell
+Date Exported: 2/21/2026 9:54:39 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblBell
+  Has Module: False
+

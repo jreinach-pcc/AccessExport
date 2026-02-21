@@ -1,0 +1,8 @@
+Report Name: BarcodeLblM&M
+Date Exported: 2/21/2026 9:54:35 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblM&M
+  Has Module: False
+

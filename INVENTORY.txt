@@ -1,0 +1,213 @@
+ACCESS DATABASE INVENTORY
+Database: C:\Users\justin.reinach\OneDrive - Precision Castparts Corp\Desktop\Shippings VER2025-001 - Copy.mdb
+Date: 2/21/2026 9:54:45 AM
+======================================================================
+
+SUMMARY:
+  Tables: 58
+  Queries: 94
+  Forms: 23
+  Reports: 44
+  Modules: 2
+
+LOCAL TABLES (stored in Access):
+  - Customer (Records: 3)
+  - dbo_vw_Tbl_Boeing_Spirit_ASN_Local (Records: 25)
+  - SwitchItems (Records: 8)
+  - Tbl_BoxSize1 (Records: 15)
+  - TblAIC-Boeing1_10-23-17 (Records: 22)
+  - TblAIC-Boeing-Source (Records: 22)
+  - TblAIC-MinMax (Records: 8)
+  - TblDispatchLoginWarehouse_local (Records: 17)
+  - TblDispatchLogOutWarehouse_local (Records: 6)
+  - TblDispatchNote (Records: 0)
+  - TblDispatchNoteBins (Records: 0)
+  - TblDispatchNotePrint (Records: 0)
+  - TblDockingRecords_Local (Records: 2)
+  - TblJobReceived (Records: 0)
+  - TblJobReceivedBins (Records: 0)
+  - TblJobs (Records: 4)
+  - TblPackingSlip (Records: 1)
+  - TblPassword (Records: 11)
+  - TblPasswordBK (Records: 9)
+  - TblPrintASNLabels (Records: 21)
+  - TblPrintBarLabels (Records: 1)
+  - TblPrintStockLabels (Records: 0)
+  - TblShippingRecords_Local (Records: 3)
+
+LINKED TABLES (SQL Server or other):
+  - dbo_AdmFormData
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.AdmFormData
+
+  - dbo_ArCustomer
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.ArCustomer
+
+  - dbo_InvMaster
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.InvMaster
+
+  - dbo_LabCertRecord
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=Lab_SQL;Description=Lab on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=lab
+      Source Table: dbo.LabCertRecord
+
+  - dbo_MdnDetail
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.MdnDetail
+
+  - dbo_MdnDetailLot
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.MdnDetailLot
+
+  - dbo_MdnMaster
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.MdnMaster
+
+  - dbo_SorDetail
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.SorDetail
+
+  - dbo_TblArTerms
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.TblArTerms
+
+  - dbo_TblBoeingNote
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblBoeingNote
+
+  - dbo_TblCarrier
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblCarrier
+
+  - dbo_TblCertificationMaster
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=Cert_SQL;Description=Cert for AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=Cert_SQL
+      Source Table: dbo.TblCertificationMaster
+
+  - dbo_TblCertRecord
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=Lab_SQL;Description=Lab on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=lab
+      Source Table: dbo.TblCertRecord1
+
+  - dbo_TblDockingEmployee
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblDockingEmployee
+
+  - dbo_TblPallet
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblPallet
+
+  - dbo_TblPassword
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblPassword
+
+  - dbo_TblShippingBarcodeLabel
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShippingBarcodeLabel
+
+  - dbo_TblShippingLogsArchive
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShippingLogsArchive
+
+  - dbo_TblShippingRecordsArchive
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShippingRecordsArchive
+
+  - dbo_vw_Tbl_Boeing_Spirit_ASN
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.vw_Tbl_Boeing_Spirit_ASN
+
+  - dbo_WipMaster
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+      Source Table: dbo.WipMaster
+
+  - ShippingRecords
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.ShippingRecords
+
+  - tbl_BoxSize
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.tbl_BoxSize
+
+  - TblAIC-Boeing
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblAIC-Boeing
+
+  - TblAIC-Spirit
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblAIC-Spirit
+
+  - TblBoxSize
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblBoxSize
+
+  - TblDispatchLoginWarehouse
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblDispatchLoginWarehouse
+
+  - TblDispatchLogOutWarehouse
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblDispatchLogOutWarehouse
+
+  - TblDivisionCode
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblDivisionCode
+
+  - TblDockingRecords
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblDockingRecords
+
+  - TblOption
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblOption
+
+  - TblPallet
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblPallet
+
+  - TblShipAddr
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShipAddr
+
+  - TblShippingLogs
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShippingLogs
+
+  - TblShippingRecords
+      Type: SQL Server/ODBC
+      Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+      Source Table: dbo.TblShippingRecords
+

@@ -1,0 +1,10 @@
+Report Name: Copy Of Sample DataMatrix Font Report
+Date Exported: 2/21/2026 9:54:29 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: Customer
+  Has Module: True
+
+VBA CODE:
+----------------------------------------------------------------------

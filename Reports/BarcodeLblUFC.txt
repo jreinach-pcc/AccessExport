@@ -1,0 +1,10 @@
+Report Name: BarcodeLblUFC
+Date Exported: 2/21/2026 9:54:28 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblUFC
+  Has Module: True
+
+VBA CODE:
+----------------------------------------------------------------------

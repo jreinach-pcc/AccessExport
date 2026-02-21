@@ -1,0 +1,8 @@
+Report Name: BarcodeLblHoneyWell
+Date Exported: 2/21/2026 9:54:20 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblHoneywell
+  Has Module: False
+

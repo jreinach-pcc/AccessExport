@@ -1,0 +1,10 @@
+Report Name: MdnDetailReport
+Date Exported: 2/21/2026 9:54:44 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: MdnDetailQry
+  Has Module: True
+
+VBA CODE:
+----------------------------------------------------------------------

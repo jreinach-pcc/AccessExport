@@ -1,0 +1,8 @@
+Report Name: BarcodeLblOthers
+Date Exported: 2/21/2026 9:54:12 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblOthers
+  Has Module: False
+

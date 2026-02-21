@@ -1,0 +1,2584 @@
+TABLE STRUCTURES
+Date Exported: 2/21/2026 9:54:45 AM
+======================================================================
+
+TABLE: Customer
+  Type: LOCAL
+  Records: 3
+
+  FIELDS:
+    - ID (Long)
+    - Name (Text)
+    - Address (Text)
+    - City (Text)
+    - State/Prov (Text)
+    - Country (Text)
+    - Zip Code (Text)
+
+  INDEXES:
+    - ID (UNIQUE)
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+    - Zip Code
+
+----------------------------------------------------------------------
+
+TABLE: dbo_AdmFormData
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.AdmFormData
+
+  FIELDS:
+    - FormType (Text) NOT NULL
+    - KeyField (Text) NOT NULL
+    - FieldName (Text) NOT NULL
+    - AlphaValue (Text) NOT NULL
+    - NumericValue (Unknown (20)) NOT NULL
+    - DateValue (Date)
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - AdmFormDataKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_ArCustomer
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.ArCustomer
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text) NOT NULL
+    - ShortName (Text) NOT NULL
+    - ExemptFinChg (Text) NOT NULL
+    - MaintHistory (Text) NOT NULL
+    - CustomerType (Text) NOT NULL
+    - MasterAccount (Text) NOT NULL
+    - StoreNumber (Text) NOT NULL
+    - PrtMasterAdd (Text) NOT NULL
+    - CreditStatus (Text) NOT NULL
+    - CreditLimit (Unknown (20)) NOT NULL
+    - InvoiceCount (Unknown (20)) NOT NULL
+    - Salesperson (Text) NOT NULL
+    - Salesperson1 (Text) NOT NULL
+    - Salesperson2 (Text) NOT NULL
+    - Salesperson3 (Text) NOT NULL
+    - PriceCode (Text) NOT NULL
+    - CustomerClass (Text) NOT NULL
+    - Branch (Text) NOT NULL
+    - TermsCode (Text) NOT NULL
+    - InvDiscCode (Text) NOT NULL
+    - BalanceType (Text) NOT NULL
+    - Area (Text) NOT NULL
+    - LineDiscCode (Text) NOT NULL
+    - TaxStatus (Text) NOT NULL
+    - TaxExemptNumber (Text) NOT NULL
+    - SpecialInstrs (Text) NOT NULL
+    - PriceCategoryTable (Memo) NOT NULL
+    - DateLastSale (Date)
+    - DateLastPay (Date)
+    - OutstOrdVal (Unknown (20)) NOT NULL
+    - NumOutstOrd (Unknown (20)) NOT NULL
+    - Telephone (Text) NOT NULL
+    - Contact (Text) NOT NULL
+    - AddTelephone (Text) NOT NULL
+    - Fax (Text) NOT NULL
+    - Telex (Text) NOT NULL
+    - TelephoneExtn (Text) NOT NULL
+    - Currency (Text) NOT NULL
+    - UserField1 (Text) NOT NULL
+    - UserField2 (Unknown (20)) NOT NULL
+    - GstExemptFlag (Text) NOT NULL
+    - GstExemptNum (Text) NOT NULL
+    - GstLevel (Text) NOT NULL
+    - DetailMoveReqd (Text) NOT NULL
+    - InterfaceFlag (Text) NOT NULL
+    - ContractPrcReqd (Text) NOT NULL
+    - BuyingGroup1 (Text) NOT NULL
+    - BuyingGroup2 (Text) NOT NULL
+    - BuyingGroup3 (Text) NOT NULL
+    - BuyingGroup4 (Text) NOT NULL
+    - BuyingGroup5 (Text) NOT NULL
+    - StatementReqd (Text) NOT NULL
+    - BackOrdReqd (Text) NOT NULL
+    - ShippingInstrs (Text) NOT NULL
+    - ShippingInstrsCod (Text) NOT NULL
+    - StateCode (Text) NOT NULL
+    - DateCustAdded (Date)
+    - StockInterchange (Text) NOT NULL
+    - MaintLastPrcPaid (Text) NOT NULL
+    - IbtCustomer (Text) NOT NULL
+    - SoDefaultDoc (Text) NOT NULL
+    - CounterSlsOnly (Text) NOT NULL
+    - PaymentStatus (Text) NOT NULL
+    - Nationality (Text) NOT NULL
+    - HighestBalance (Unknown (20)) NOT NULL
+    - CustomerOnHold (Text) NOT NULL
+    - InvCommentCode (Text) NOT NULL
+    - EdiSenderCode (Text) NOT NULL
+    - RelOrdOsValue (Unknown (20)) NOT NULL
+    - EdiFlag (Text) NOT NULL
+    - SoDefaultType (Text) NOT NULL
+    - Email (Text) NOT NULL
+    - ApplyOrdDisc (Text) NOT NULL
+    - ApplyLineDisc (Text) NOT NULL
+    - FaxInvoices (Text) NOT NULL
+    - FaxStatements (Text) NOT NULL
+    - HighInvDays (Unknown (20)) NOT NULL
+    - HighInv (Text) NOT NULL
+    - DocFax (Text) NOT NULL
+    - DocFaxContact (Text) NOT NULL
+    - SoldToAddr1 (Text) NOT NULL
+    - SoldToAddr2 (Text) NOT NULL
+    - SoldToAddr3 (Text) NOT NULL
+    - SoldToAddr3Loc (Text) NOT NULL
+    - SoldToAddr4 (Text) NOT NULL
+    - SoldToAddr5 (Text) NOT NULL
+    - SoldPostalCode (Text) NOT NULL
+    - SoldToGpsLat (Unknown (20)) NOT NULL
+    - SoldToGpsLong (Unknown (20)) NOT NULL
+    - ShipToAddr1 (Text) NOT NULL
+    - ShipToAddr2 (Text) NOT NULL
+    - ShipToAddr3 (Text) NOT NULL
+    - ShipToAddr3Loc (Text) NOT NULL
+    - ShipToAddr4 (Text) NOT NULL
+    - ShipToAddr5 (Text) NOT NULL
+    - ShipPostalCode (Text) NOT NULL
+    - ShipToGpsLat (Unknown (20)) NOT NULL
+    - ShipToGpsLong (Unknown (20)) NOT NULL
+    - State (Text) NOT NULL
+    - CountyZip (Text) NOT NULL
+    - City (Text) NOT NULL
+    - State1 (Text) NOT NULL
+    - CountyZip1 (Text) NOT NULL
+    - City1 (Text) NOT NULL
+    - DefaultOrdType (Text) NOT NULL
+    - PoNumberMandatory (Text) NOT NULL
+    - CreditCheckFlag (Text) NOT NULL
+    - CompanyTaxNumber (Text) NOT NULL
+    - DeliveryTerms (Text) NOT NULL
+    - TransactionNature (Unknown (20)) NOT NULL
+    - DeliveryTermsC (Text) NOT NULL
+    - TransactionNatureC (Unknown (20)) NOT NULL
+    - RouteCode (Text) NOT NULL
+    - FaxQuotes (Text) NOT NULL
+    - RouteDistance (Unknown (20)) NOT NULL
+    - TpmCustomerFlag (Text) NOT NULL
+    - SalesWarehouse (Text) NOT NULL
+    - TpmPricingFlag (Text) NOT NULL
+    - ArStatementNo (Text) NOT NULL
+    - TpmCreditCheck (Text) NOT NULL
+    - WholeOrderShipFlag (Text) NOT NULL
+    - MinimumOrderValue (Unknown (20)) NOT NULL
+    - MinimumOrderChgCod (Text) NOT NULL
+    - UkVatFlag (Text) NOT NULL
+    - UkCurrency (Text) NOT NULL
+    - LanguageCode (Text) NOT NULL
+    - ShippingLocation (Text) NOT NULL
+    - AltMethodFlag (Text) NOT NULL
+    - SalesAllowed (Text) NOT NULL
+    - UnappPayAllowed (Text) NOT NULL
+    - PaymentsAllowed (Text) NOT NULL
+    - QuotesAllowed (Text) NOT NULL
+    - CrNotesAllowed (Text) NOT NULL
+    - DrNotesAllowed (Text) NOT NULL
+    - QueryAllowed (Text) NOT NULL
+    - TimeStamp (Unknown (9))
+    - NameForBackOrder (Text)
+
+  INDEXES:
+    - ArCustomerIdxArea (UNIQUE)
+    - ArCustomerIdxBranch (UNIQUE)
+    - ArCustomerIdxClass (UNIQUE)
+    - ArCustomerIdxEdi (UNIQUE)
+    - ArCustomerIdxFullname (UNIQUE)
+    - ArCustomerIdxName (UNIQUE)
+    - ArCustomerIdxPhone (UNIQUE)
+    - ArCustomerIdxSlsp (UNIQUE)
+    - ArCustomerKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_InvMaster
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.InvMaster
+
+  FIELDS:
+    - StockCode (Text) NOT NULL
+    - Description (Text) NOT NULL
+    - LongDesc (Text) NOT NULL
+    - AlternateKey1 (Text) NOT NULL
+    - AlternateKey2 (Text) NOT NULL
+    - EccUser (Text) NOT NULL
+    - StockUom (Text) NOT NULL
+    - AlternateUom (Text) NOT NULL
+    - OtherUom (Text) NOT NULL
+    - ConvFactAltUom (Unknown (20)) NOT NULL
+    - ConvMulDiv (Text) NOT NULL
+    - ConvFactOthUom (Unknown (20)) NOT NULL
+    - MulDiv (Text) NOT NULL
+    - Mass (Unknown (20)) NOT NULL
+    - Volume (Unknown (20)) NOT NULL
+    - Decimals (Unknown (20)) NOT NULL
+    - PriceCategory (Text) NOT NULL
+    - PriceMethod (Text) NOT NULL
+    - Supplier (Text) NOT NULL
+    - CycleCount (Unknown (20)) NOT NULL
+    - ProductClass (Text) NOT NULL
+    - TaxCode (Text) NOT NULL
+    - OtherTaxCode (Text) NOT NULL
+    - ListPriceCode (Text) NOT NULL
+    - SerialMethod (Text) NOT NULL
+    - InterfaceFlag (Text) NOT NULL
+    - KitType (Text) NOT NULL
+    - LowLevelCode (Unknown (20)) NOT NULL
+    - Buyer (Text) NOT NULL
+    - Planner (Text) NOT NULL
+    - TraceableType (Text) NOT NULL
+    - MpsFlag (Text) NOT NULL
+    - BulkIssueFlag (Text) NOT NULL
+    - AbcClass (Text) NOT NULL
+    - LeadTime (Unknown (20)) NOT NULL
+    - StockMovementReq (Text) NOT NULL
+    - ClearingFlag (Text) NOT NULL
+    - SupercessionDate (Date)
+    - AbcAnalysisReq (Text) NOT NULL
+    - AbcCostingReq (Text) NOT NULL
+    - CostUom (Text) NOT NULL
+    - MinPricePct (Unknown (20)) NOT NULL
+    - LabourCost (Unknown (20)) NOT NULL
+    - MaterialCost (Unknown (20)) NOT NULL
+    - FixOverhead (Unknown (20)) NOT NULL
+    - VariableOverhead (Unknown (20)) NOT NULL
+    - PartCategory (Text) NOT NULL
+    - DrawOfficeNum (Text) NOT NULL
+    - WarehouseToUse (Text) NOT NULL
+    - BuyingRule (Text) NOT NULL
+    - SpecificGravity (Unknown (20)) NOT NULL
+    - ImplosionNum (Unknown (20)) NOT NULL
+    - Ebq (Unknown (20)) NOT NULL
+    - ComponentCount (Unknown (20)) NOT NULL
+    - FixTimePeriod (Unknown (20)) NOT NULL
+    - PanSize (Unknown (20)) NOT NULL
+    - DockToStock (Unknown (20)) NOT NULL
+    - OutputMassFlag (Text) NOT NULL
+    - ShelfLife (Unknown (20)) NOT NULL
+    - Version (Text) NOT NULL
+    - Release (Text) NOT NULL
+    - DemandTimeFence (Unknown (20)) NOT NULL
+    - MakeToOrderFlag (Text) NOT NULL
+    - ManufLeadTime (Unknown (20)) NOT NULL
+    - GrossReqRule (Text) NOT NULL
+    - PercentageYield (Unknown (20)) NOT NULL
+    - AbcPreProd (Unknown (20)) NOT NULL
+    - AbcManufacturing (Unknown (20)) NOT NULL
+    - AbcSales (Unknown (20)) NOT NULL
+    - AbcCumPreProd (Unknown (20)) NOT NULL
+    - AbcCumManuf (Unknown (20)) NOT NULL
+    - WipCtlGlCode (Text) NOT NULL
+    - ResourceCode (Text) NOT NULL
+    - GstTaxCode (Text) NOT NULL
+    - PrcInclGst (Text) NOT NULL
+    - SerEntryAtSale (Text) NOT NULL
+    - StpSelection (Text) NOT NULL
+    - UserField1 (Text) NOT NULL
+    - UserField2 (Unknown (20)) NOT NULL
+    - UserField3 (Text) NOT NULL
+    - UserField4 (Text) NOT NULL
+    - UserField5 (Text) NOT NULL
+    - TariffCode (Text) NOT NULL
+    - SupplementaryUnit (Text) NOT NULL
+    - EbqPan (Text) NOT NULL
+    - StdLandedCost (Unknown (20)) NOT NULL
+    - LctRequired (Text) NOT NULL
+    - StdLctRoute (Text) NOT NULL
+    - IssMultLotsFlag (Text) NOT NULL
+    - InclInStrValid (Text) NOT NULL
+    - StdLabCostsBill (Unknown (20)) NOT NULL
+    - PhantomIfComp (Text) NOT NULL
+    - CountryOfOrigin (Text) NOT NULL
+    - StockOnHold (Text) NOT NULL
+    - StockOnHoldReason (Text) NOT NULL
+    - EccFlag (Text) NOT NULL
+    - StockAndAltUm (Text) NOT NULL
+    - AltUnitChar (Unknown (20)) NOT NULL
+    - JobsOnHold (Text) NOT NULL
+    - JobHoldAllocs (Text) NOT NULL
+    - PurchOnHold (Text) NOT NULL
+    - SalesOnHold (Text) NOT NULL
+    - MaintOnHold (Text) NOT NULL
+    - BatchBill (Text) NOT NULL
+    - BlanketPoExists (Text) NOT NULL
+    - CallOffBpoExists (Text) NOT NULL
+    - DistWarehouseToUse (Text) NOT NULL
+    - JobClassification (Text) NOT NULL
+    - SubContractCost (Unknown (20)) NOT NULL
+    - DateStkAdded (Date)
+    - InspectionFlag (Text) NOT NULL
+    - SerialPrefix (Text) NOT NULL
+    - SerialSuffix (Text) NOT NULL
+    - ReturnableItem (Text) NOT NULL
+    - ProductGroup (Text) NOT NULL
+    - PriceType (Text) NOT NULL
+    - Basis (Text) NOT NULL
+    - ManualCostFlag (Text) NOT NULL
+    - ManufactureUom (Text) NOT NULL
+    - ConvFactMuM (Unknown (20)) NOT NULL
+    - ManMulDiv (Text) NOT NULL
+    - LookAheadWin (Unknown (20)) NOT NULL
+    - LoadingFactor (Unknown (20)) NOT NULL
+    - SupplUnitCode (Text) NOT NULL
+    - StorageSecurity (Text) NOT NULL
+    - StorageHazard (Text) NOT NULL
+    - StorageCondition (Text) NOT NULL
+    - ProductShelfLife (Unknown (20)) NOT NULL
+    - InternalShelfLife (Unknown (20)) NOT NULL
+    - AltMethodFlag (Text) NOT NULL
+    - AltSisoFlag (Text) NOT NULL
+    - AltReductionFlag (Text) NOT NULL
+    - WithTaxExpenseType (Text) NOT NULL
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - InvMasterIdxAlt1 (UNIQUE)
+    - InvMasterIdxAlt2 (UNIQUE)
+    - InvMasterIdxDesc (UNIQUE)
+    - InvMasterIdxEccUser (UNIQUE)
+    - InvMasterIdxLong (UNIQUE)
+    - InvMasterIdxPcl (UNIQUE)
+    - InvMasterIdxSup (UNIQUE)
+    - InvMasterKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_LabCertRecord
+  Type: LINKED
+  Connect: ODBC;DSN=Lab_SQL;Description=Lab on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=lab
+  Source Table: dbo.LabCertRecord
+
+  FIELDS:
+    - CUSTOMER (Text)
+    - DATE (Date)
+    - DESCRIPTION (Text)
+    - TYPIST (Text)
+    - LOT NUMBER (Text) NOT NULL
+    - LOT NO (Text)
+    - PART NUMBER (Text)
+    - REVISION (Text)
+    - PART NUM 2 (Text)
+    - REV 2 (Text)
+    - DIAMETER (Text)
+    - THD CLASS (Text)
+    - DIAMETER-DECIMAL (Single)
+    - HEAT NUMBER (Text)
+    - PROC SPEC (Text)
+    - PROC SPEC NOTES (Text)
+    - MATERIAL (Text)
+    - MATERIAL SPEC (Text)
+    - VENDOR (Text)
+    - VENDOR DATE (Text)
+    - MIL SPEC (Text)
+    - QTY SHEAR (Integer)
+    - QTY TENSILE (Integer)
+    - QTY FATIGUE (Integer)
+    - SHEAR (Text)
+    - TENSILE (Text)
+    - FATIGUE (Text)
+    - HIGH (Text)
+    - LOW (Text)
+    - AVERAGE (Text)
+    - MAXIMUM CYCLES (Text)
+    - HARDNESS (Text)
+    - LOT SIZE (Long)
+    - LINE 1 (Text)
+    - LINE 2 (Text)
+    - LINE 3 (Text)
+    - LINE 4 (Text)
+    - LINE 5 (Text)
+    - LINE 6 (Text)
+    - LINE 7 (Text)
+    - LINE 8 (Text)
+    - LINE 9 (Text)
+    - LINE 10 (Text)
+    - LINE 11 (Text)
+    - LINE 12 (Text)
+    - SHEAR NOTES (Text)
+    - TENSILE NOTES (Text)
+    - FATIGUE NOTES (Text)
+    - MICRO SAMPLES (Integer)
+    - PRINTED (Boolean)
+    - HYDROGEN (Text)
+    - F1 (Text)
+    - F2 (Text)
+    - F3 (Text)
+    - F4 (Text)
+    - F5 (Text)
+    - F6 (Text)
+    - F7 (Text)
+    - F8 (Text)
+    - N1 (Single)
+    - N2 (Single)
+    - G/L (Integer)
+    - MFG DATE (Text)
+    - PLATE SAMP (Integer)
+    - HD DATE (Date)
+    - FQA (Boolean)
+    - FQA REASON (Text)
+    - GR MARK (Boolean)
+    - HEAD MARK (Text)
+    - LOGO (Boolean)
+    - MICRO PROP (Text)
+    - GRAIN SIZE (Text)
+    - HEX BROACH (Boolean)
+    - TSO (Boolean)
+    - ALLOY VER DATE (Date)
+    - HT (Text)
+    - FIN (Text)
+    - NDT (Text)
+    - NDTSamp (Text)
+    - LUBE (Text)
+    - TIME (Date)
+    - MATING_NUT_TENSILE (Boolean)
+    - SHARP_SHEAR_DIE (Boolean)
+
+  INDEXES:
+    - PK_LabCertRecord_1 (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_MdnDetail
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.MdnDetail
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DispatchNoteLine (Unknown (20)) NOT NULL
+    - SalesOrder (Text) NOT NULL
+    - SalesOrderLine (Unknown (20)) NOT NULL
+    - LineType (Text) NOT NULL
+    - DispatchStatus (Text) NOT NULL
+    - TotalValue (Unknown (20)) NOT NULL
+    - OverUnderFlag (Text) NOT NULL
+    - StockDepleted (Text) NOT NULL
+    - ConfirmationDate (Date)
+    - ConfirmationLine (Unknown (20)) NOT NULL
+    - OrigShipSoUom (Unknown (20)) NOT NULL
+    - OrigShipStkUom (Unknown (20)) NOT NULL
+    - OrigBoSoUom (Unknown (20)) NOT NULL
+    - MStockCode (Text) NOT NULL
+    - MStockDes (Text) NOT NULL
+    - MWarehouse (Text) NOT NULL
+    - MBin (Text) NOT NULL
+    - MOrderQty (Unknown (20)) NOT NULL
+    - MQtyToDispatch (Unknown (20)) NOT NULL
+    - MBackOrderQty (Unknown (20)) NOT NULL
+    - MUnitCost (Unknown (20)) NOT NULL
+    - MBomFlag (Text) NOT NULL
+    - MParentKitType (Text) NOT NULL
+    - MQtyPer (Unknown (20)) NOT NULL
+    - MScrapPercentage (Unknown (20)) NOT NULL
+    - MPrintComponent (Text) NOT NULL
+    - MComponentSeq (Text) NOT NULL
+    - MQtyChangesFlag (Text) NOT NULL
+    - MOptionalFlag (Text) NOT NULL
+    - MDecimals (Unknown (20)) NOT NULL
+    - MOrderUom (Text) NOT NULL
+    - MStockQtyToShp (Unknown (20)) NOT NULL
+    - MStockingUom (Text) NOT NULL
+    - MConvFactOrdUm (Unknown (20)) NOT NULL
+    - MMulDivPrcFct (Text) NOT NULL
+    - MPrice (Unknown (20)) NOT NULL
+    - MPriceUom (Text) NOT NULL
+    - MCommissionCode (Text) NOT NULL
+    - MDiscPct1 (Unknown (20)) NOT NULL
+    - MDiscPct2 (Unknown (20)) NOT NULL
+    - MDiscPct3 (Unknown (20)) NOT NULL
+    - MDiscValFlag (Text) NOT NULL
+    - MDiscValue (Unknown (20)) NOT NULL
+    - MProductClass (Text) NOT NULL
+    - MTaxCode (Text) NOT NULL
+    - MLineShipDate (Date)
+    - MAllocStatSched (Text) NOT NULL
+    - MFstTaxCode (Text) NOT NULL
+    - MStockUnitMass (Unknown (20)) NOT NULL
+    - MStockUnitVol (Unknown (20)) NOT NULL
+    - MPriceCode (Text) NOT NULL
+    - MConvFactAlloc (Unknown (20)) NOT NULL
+    - MMulDivQtyFct (Text) NOT NULL
+    - MTraceableType (Text) NOT NULL
+    - MMpsFlag (Text) NOT NULL
+    - MPickingSlip (Text) NOT NULL
+    - MMovementReqd (Text) NOT NULL
+    - MSerialMethod (Text) NOT NULL
+    - MZeroQtyCrNote (Text) NOT NULL
+    - MAbcApplied (Text) NOT NULL
+    - MMpsGrossReqd (Text) NOT NULL
+    - MContract (Text) NOT NULL
+    - MBuyingGroup (Text) NOT NULL
+    - MCusSupStkCode (Text) NOT NULL
+    - MCusRetailPrice (Unknown (20)) NOT NULL
+    - MTariffCode (Text) NOT NULL
+    - MLineReceiptDat (Date)
+    - MLeadTime (Unknown (20)) NOT NULL
+    - MTrfCostMult (Unknown (20)) NOT NULL
+    - MSupplementaryUn (Text) NOT NULL
+    - MReviewFlag (Text) NOT NULL
+    - MReviewStatus (Text) NOT NULL
+    - MInvoicePrinted (Text) NOT NULL
+    - MDelNotePrinted (Text) NOT NULL
+    - MOrdAckPrinted (Text) NOT NULL
+    - MHierarchyJob (Text) NOT NULL
+    - MCustRequestDat (Date)
+    - MLastDelNote (Text) NOT NULL
+    - MUserDef (Text) NOT NULL
+    - MQtyDispatched (Unknown (20)) NOT NULL
+    - MDiscChanged (Text) NOT NULL
+    - MCreditOrderNo (Text) NOT NULL
+    - MCreditOrderLine (Unknown (20)) NOT NULL
+    - MUnitQuantity (Text) NOT NULL
+    - MConvFactUnitQ (Unknown (20)) NOT NULL
+    - MAltUomUnitQ (Text) NOT NULL
+    - MDecimalsUnitQ (Unknown (20)) NOT NULL
+    - MEccFlag (Text) NOT NULL
+    - MVersion (Text) NOT NULL
+    - MRelease (Text) NOT NULL
+    - MCommitDate (Date)
+    - NComment (Text) NOT NULL
+    - NCommentFromLin (Unknown (20)) NOT NULL
+    - NMscChargeValue (Unknown (20)) NOT NULL
+    - NMscProductCls (Text) NOT NULL
+    - NMscChargeCost (Unknown (20)) NOT NULL
+    - NMscInvCharge (Text) NOT NULL
+    - NCommentType (Text) NOT NULL
+    - NMscTaxCode (Text) NOT NULL
+    - NMscFstCode (Text) NOT NULL
+    - NCommentTextTyp (Text) NOT NULL
+    - NMscChargeQty (Unknown (20)) NOT NULL
+    - NSrvIncTotal (Text) NOT NULL
+    - NSrvSummary (Text) NOT NULL
+    - NSrvChargeType (Text) NOT NULL
+    - NSrvParentLine (Unknown (20)) NOT NULL
+    - NSrvUnitPrice (Unknown (20)) NOT NULL
+    - NSrvUnitCost (Unknown (20)) NOT NULL
+    - NSrvQtyFactor (Unknown (20)) NOT NULL
+    - NSrvApplyFactor (Text) NOT NULL
+    - NSrvDecimalRnd (Unknown (20)) NOT NULL
+    - NSrvDecRndFlag (Text) NOT NULL
+    - NSrvMinValue (Unknown (20)) NOT NULL
+    - NSrvMaxValue (Unknown (20)) NOT NULL
+    - NSrvMulDiv (Text) NOT NULL
+    - NPrtOnInv (Text) NOT NULL
+    - NPrtOnDel (Text) NOT NULL
+    - NPrtOnAck (Text) NOT NULL
+    - NTaxAmtFlag (Text) NOT NULL
+    - NDepRetFlagProj (Text) NOT NULL
+    - NRetentionJob (Text) NOT NULL
+    - NSrvMinQuantity (Unknown (20)) NOT NULL
+    - NChargeCode (Text) NOT NULL
+    - TpmUsageFlag (Text) NOT NULL
+    - PromotionCode (Text) NOT NULL
+    - TpmSequence (Unknown (20)) NOT NULL
+    - SalesOrderInitLine (Unknown (20)) NOT NULL
+    - PreactorPriority (Unknown (20)) NOT NULL
+    - SalesOrderDetStat (Text) NOT NULL
+    - JnlYear (Unknown (20)) NOT NULL
+    - JnlMonth (Unknown (20)) NOT NULL
+    - Journal (Unknown (20)) NOT NULL
+    - JournalLine (Unknown (20)) NOT NULL
+    - MaterialAllocLine (Text) NOT NULL
+    - ScrapQuantity (Unknown (20)) NOT NULL
+    - FixedQtyPerFlag (Text) NOT NULL
+    - FixedQtyPer (Unknown (20)) NOT NULL
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - MdnDetailIdxSodtStat (UNIQUE)
+    - MdnDetailIdxSorder (UNIQUE)
+    - MdnDetailIdxStock (UNIQUE)
+    - MdnDetailKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_MdnDetailLot
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.MdnDetailLot
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DispatchNoteLine (Unknown (20)) NOT NULL
+    - SalesOrder (Text) NOT NULL
+    - SalesOrderLine (Unknown (20)) NOT NULL
+    - Lot (Text) NOT NULL
+    - StockQtyToShip (Unknown (20)) NOT NULL
+    - QtyThisSession (Unknown (20)) NOT NULL
+    - Version (Text) NOT NULL
+    - Release (Text) NOT NULL
+    - Certificate (Text) NOT NULL
+    - LotExpiryDate (Date)
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - MdnDetailLotKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_MdnMaster
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.MdnMaster
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - NextDetailLine (Unknown (20)) NOT NULL
+    - SalesOrder (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - CustomerName (Text) NOT NULL
+    - ShippingInstrs (Text) NOT NULL
+    - ShippingInstrsCod (Text) NOT NULL
+    - SpecialInstrs (Text) NOT NULL
+    - DispatchComments1 (Text) NOT NULL
+    - DispatchComments2 (Text) NOT NULL
+    - DispatchComments3 (Text) NOT NULL
+    - DispatchComments4 (Text) NOT NULL
+    - UserField1 (Text) NOT NULL
+    - UserField2 (Text) NOT NULL
+    - Salesperson (Text) NOT NULL
+    - Branch (Text) NOT NULL
+    - Area (Text) NOT NULL
+    - FixExchangeRate (Text) NOT NULL
+    - ExchangeRate (Unknown (20)) NOT NULL
+    - MulDiv (Text) NOT NULL
+    - Currency (Text) NOT NULL
+    - DiscPct1 (Unknown (20)) NOT NULL
+    - DiscPct2 (Unknown (20)) NOT NULL
+    - DiscPct3 (Unknown (20)) NOT NULL
+    - OrderType (Text) NOT NULL
+    - InvTermsOverride (Text) NOT NULL
+    - ReprintFormat (Text) NOT NULL
+    - TaxExemptFlag (Text) NOT NULL
+    - TaxExemptOverride (Text) NOT NULL
+    - IbtFlag (Text) NOT NULL
+    - DispatchName (Text) NOT NULL
+    - PlannedDeliverDate (Date)
+    - ActualDeliveryDate (Date)
+    - ShipAddressFlag (Text) NOT NULL
+    - CustomerPoNumber (Text) NOT NULL
+    - CompanyTaxNo (Text) NOT NULL
+    - Invoice (Text) NOT NULL
+    - InvoiceCreatedDate (Date)
+    - ConsolidateInvFlag (Text) NOT NULL
+    - TaxExemptNumber (Text) NOT NULL
+    - DispatchNoteStatus (Text) NOT NULL
+    - PrevStatus (Text) NOT NULL
+    - ActiveFlag (Text) NOT NULL
+    - Reason (Text) NOT NULL
+    - StatusWhenHeld (Text) NOT NULL
+    - DateLastInvPrt (Date)
+    - Nationality (Text) NOT NULL
+    - DeliveryTerms (Text) NOT NULL
+    - TransactionNature (Unknown (20)) NOT NULL
+    - TransportMode (Unknown (20)) NOT NULL
+    - ProcessFlag (Unknown (20)) NOT NULL
+    - DispatchCustName (Text) NOT NULL
+    - DispatchAddress1 (Text) NOT NULL
+    - DispatchAddress2 (Text) NOT NULL
+    - DispatchAddress3 (Text) NOT NULL
+    - DispatchAddrLoc (Text) NOT NULL
+    - DispatchAddress4 (Text) NOT NULL
+    - DispatchAddress5 (Text) NOT NULL
+    - DispatchPostalCode (Text) NOT NULL
+    - DispatchGpsLat (Unknown (20)) NOT NULL
+    - DispatchGpsLong (Unknown (20)) NOT NULL
+    - State (Text) NOT NULL
+    - CountyZip (Text) NOT NULL
+    - ExtendedTaxCode (Text) NOT NULL
+    - MultiShipCode (Text) NOT NULL
+    - WebCreated (Text) NOT NULL
+    - Quote (Text) NOT NULL
+    - QuoteVersion (Unknown (20)) NOT NULL
+    - GtrReference (Text) NOT NULL
+    - LastOperator (Text) NOT NULL
+    - Email (Text) NOT NULL
+    - CreditAuthority (Text) NOT NULL
+    - TpmPickupFlag (Text) NOT NULL
+    - TpmEvaluatedFlag (Text) NOT NULL
+    - StandardComment (Text) NOT NULL
+    - DetailStatus (Text) NOT NULL
+    - SalesOrderSource (Text) NOT NULL
+    - SalesOrderSrcDesc (Text) NOT NULL
+    - LanguageCode (Text) NOT NULL
+    - ShippingLocation (Text) NOT NULL
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - MdnMasterIdxActive (UNIQUE)
+    - MdnMasterIdxCspo (UNIQUE)
+    - MdnMasterIdxCustomer (UNIQUE)
+    - MdnMasterIdxDetStat (UNIQUE)
+    - MdnMasterIdxInvoice (UNIQUE)
+    - MdnMasterIdxOrder (UNIQUE)
+    - MdnMasterKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_SorDetail
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.SorDetail
+
+  FIELDS:
+    - SalesOrder (Text) NOT NULL
+    - SalesOrderLine (Unknown (20)) NOT NULL
+    - LineType (Text) NOT NULL
+    - MStockCode (Text) NOT NULL
+    - MStockDes (Text) NOT NULL
+    - MWarehouse (Text) NOT NULL
+    - MBin (Text) NOT NULL
+    - MOrderQty (Unknown (20)) NOT NULL
+    - MShipQty (Unknown (20)) NOT NULL
+    - MBackOrderQty (Unknown (20)) NOT NULL
+    - MUnitCost (Unknown (20)) NOT NULL
+    - MBomFlag (Text) NOT NULL
+    - MParentKitType (Text) NOT NULL
+    - MQtyPer (Unknown (20)) NOT NULL
+    - MScrapPercentage (Unknown (20)) NOT NULL
+    - MPrintComponent (Text) NOT NULL
+    - MComponentSeq (Text) NOT NULL
+    - MQtyChangesFlag (Text) NOT NULL
+    - MOptionalFlag (Text) NOT NULL
+    - MDecimals (Unknown (20)) NOT NULL
+    - MOrderUom (Text) NOT NULL
+    - MStockQtyToShp (Unknown (20)) NOT NULL
+    - MStockingUom (Text) NOT NULL
+    - MConvFactOrdUm (Unknown (20)) NOT NULL
+    - MMulDivPrcFct (Text) NOT NULL
+    - MPrice (Unknown (20)) NOT NULL
+    - MPriceUom (Text) NOT NULL
+    - MCommissionCode (Text) NOT NULL
+    - MDiscPct1 (Unknown (20)) NOT NULL
+    - MDiscPct2 (Unknown (20)) NOT NULL
+    - MDiscPct3 (Unknown (20)) NOT NULL
+    - MDiscValFlag (Text) NOT NULL
+    - MDiscValue (Unknown (20)) NOT NULL
+    - MProductClass (Text) NOT NULL
+    - MTaxCode (Text) NOT NULL
+    - MLineShipDate (Date)
+    - MAllocStatSched (Text) NOT NULL
+    - MFstTaxCode (Text) NOT NULL
+    - MStockUnitMass (Unknown (20)) NOT NULL
+    - MStockUnitVol (Unknown (20)) NOT NULL
+    - MPriceCode (Text) NOT NULL
+    - MConvFactAlloc (Unknown (20)) NOT NULL
+    - MMulDivQtyFct (Text) NOT NULL
+    - MTraceableType (Text) NOT NULL
+    - MMpsFlag (Text) NOT NULL
+    - MPickingSlip (Text) NOT NULL
+    - MMovementReqd (Text) NOT NULL
+    - MSerialMethod (Text) NOT NULL
+    - MZeroQtyCrNote (Text) NOT NULL
+    - MAbcApplied (Text) NOT NULL
+    - MMpsGrossReqd (Text) NOT NULL
+    - MContract (Text) NOT NULL
+    - MBuyingGroup (Text) NOT NULL
+    - MCusSupStkCode (Text) NOT NULL
+    - MCusRetailPrice (Unknown (20)) NOT NULL
+    - MTariffCode (Text) NOT NULL
+    - MLineReceiptDat (Date)
+    - MLeadTime (Unknown (20)) NOT NULL
+    - MTrfCostMult (Unknown (20)) NOT NULL
+    - MSupplementaryUn (Text) NOT NULL
+    - MReviewFlag (Text) NOT NULL
+    - MReviewStatus (Text) NOT NULL
+    - MInvoicePrinted (Text) NOT NULL
+    - MDelNotePrinted (Text) NOT NULL
+    - MOrdAckPrinted (Text) NOT NULL
+    - MHierarchyJob (Text) NOT NULL
+    - MCustRequestDat (Date)
+    - MLastDelNote (Text) NOT NULL
+    - MUserDef (Text) NOT NULL
+    - MQtyDispatched (Unknown (20)) NOT NULL
+    - MDiscChanged (Text) NOT NULL
+    - MCreditOrderNo (Text) NOT NULL
+    - MCreditOrderLine (Unknown (20)) NOT NULL
+    - MUnitQuantity (Text) NOT NULL
+    - MConvFactUnitQ (Unknown (20)) NOT NULL
+    - MAltUomUnitQ (Text) NOT NULL
+    - MDecimalsUnitQ (Unknown (20)) NOT NULL
+    - MEccFlag (Text) NOT NULL
+    - MVersion (Text) NOT NULL
+    - MRelease (Text) NOT NULL
+    - MCommitDate (Date)
+    - QtyReserved (Unknown (20)) NOT NULL
+    - NComment (Text) NOT NULL
+    - NCommentFromLin (Unknown (20)) NOT NULL
+    - NMscChargeValue (Unknown (20)) NOT NULL
+    - NMscProductCls (Text) NOT NULL
+    - NMscChargeCost (Unknown (20)) NOT NULL
+    - NMscInvCharge (Text) NOT NULL
+    - NCommentType (Text) NOT NULL
+    - NMscTaxCode (Text) NOT NULL
+    - NMscFstCode (Text) NOT NULL
+    - NCommentTextTyp (Text) NOT NULL
+    - NMscChargeQty (Unknown (20)) NOT NULL
+    - NSrvIncTotal (Text) NOT NULL
+    - NSrvSummary (Text) NOT NULL
+    - NSrvChargeType (Text) NOT NULL
+    - NSrvParentLine (Unknown (20)) NOT NULL
+    - NSrvUnitPrice (Unknown (20)) NOT NULL
+    - NSrvUnitCost (Unknown (20)) NOT NULL
+    - NSrvQtyFactor (Unknown (20)) NOT NULL
+    - NSrvApplyFactor (Text) NOT NULL
+    - NSrvDecimalRnd (Unknown (20)) NOT NULL
+    - NSrvDecRndFlag (Text) NOT NULL
+    - NSrvMinValue (Unknown (20)) NOT NULL
+    - NSrvMaxValue (Unknown (20)) NOT NULL
+    - NSrvMulDiv (Text) NOT NULL
+    - NPrtOnInv (Text) NOT NULL
+    - NPrtOnDel (Text) NOT NULL
+    - NPrtOnAck (Text) NOT NULL
+    - NTaxAmountFlag (Text) NOT NULL
+    - NDepRetFlagProj (Text) NOT NULL
+    - NRetentionJob (Text) NOT NULL
+    - NSrvMinQuantity (Unknown (20)) NOT NULL
+    - NChargeCode (Text) NOT NULL
+    - IncludeInMrp (Text) NOT NULL
+    - ProductCode (Text) NOT NULL
+    - LibraryCode (Text) NOT NULL
+    - MaterialAllocLine (Text) NOT NULL
+    - ScrapQuantity (Unknown (20)) NOT NULL
+    - FixedQtyPerFlag (Text) NOT NULL
+    - FixedQtyPer (Unknown (20)) NOT NULL
+    - MultiShipCode (Text) NOT NULL
+    - User1 (Text) NOT NULL
+    - CreditReason (Text) NOT NULL
+    - OrigShipDateAps (Date)
+    - TpmUsageFlag (Text) NOT NULL
+    - PromotionCode (Text) NOT NULL
+    - TpmSequence (Unknown (20)) NOT NULL
+    - SalesOrderInitLine (Unknown (20)) NOT NULL
+    - PreactorPriority (Unknown (20)) NOT NULL
+    - SalesOrderDetStat (Text) NOT NULL
+    - SalesOrderResStat (Text) NOT NULL
+    - QtyReservedShip (Unknown (20)) NOT NULL
+    - TimeStamp (Unknown (9))
+    - LEntrySystemDate (Date)
+
+  INDEXES:
+    - SorDetailIdxCredited (UNIQUE)
+    - SorDetailIdxDetStat (UNIQUE)
+    - SorDetailIdxHier (UNIQUE)
+    - SorDetailIdxInit (UNIQUE)
+    - SorDetailIdxStk (UNIQUE)
+    - SorDetailKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblArTerms
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.TblArTerms
+
+  FIELDS:
+    - TermsCode (Text) NOT NULL
+    - Description (Text) NOT NULL
+    - DiscPct (Unknown (20)) NOT NULL
+    - DiscDays (Unknown (20)) NOT NULL
+    - DueDays (Unknown (20)) NOT NULL
+    - DiscountOption (Text) NOT NULL
+    - InvoiceOption (Text) NOT NULL
+    - DiscDayOfMonth (Unknown (20)) NOT NULL
+    - DiscMonths (Unknown (20)) NOT NULL
+    - DiscDate (Date)
+    - InvDayOfMonth (Unknown (20)) NOT NULL
+    - InvMonths (Unknown (20)) NOT NULL
+    - InvDate (Date)
+    - AgeingCode (Text) NOT NULL
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - TblArTermsKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblBoeingNote
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblBoeingNote
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - BoeingNote (Memo)
+
+  INDEXES:
+    - PK_TblBoeingNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblCarrier
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblCarrier
+
+  FIELDS:
+    - No (Integer) NOT NULL
+    - Carrier (Text)
+
+  INDEXES:
+    - PK_TblCarrier (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblCertificationMaster
+  Type: LINKED
+  Connect: ODBC;DSN=Cert_SQL;Description=Cert for AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=Cert_SQL
+  Source Table: dbo.TblCertificationMaster
+
+  FIELDS:
+    - CertificationID (Long) NOT NULL
+    - DispatchNote (Text) NOT NULL
+    - OrderDate (Date)
+    - Customer (Text)
+    - CustomerNumber (Text)
+    - EntryDate (Date)
+    - CustomerPoNumber (Text)
+    - StockCode (Text)
+    - Revision (Text)
+    - CustomerPartNumber (Text)
+    - LotNumber (Text)
+    - Lot (Text)
+    - MfgDate (Text)
+    - LotSize (Double)
+    - ProcSpec (Text)
+    - Material (Text)
+    - MaterialSpec (Text)
+    - HeatNumber (Text)
+    - SupplierName (Text)
+    - StockQtyToShip (Double)
+    - C (Text)
+    - Mn (Text)
+    - P (Text)
+    - S (Text)
+    - Si (Text)
+    - Ni (Text)
+    - Cr (Text)
+    - Mo (Text)
+    - O2 (Text)
+    - Va (Text)
+    - Ti (Text)
+    - Al (Text)
+    - N2 (Text)
+    - Fe (Text)
+    - B (Text)
+    - Cb+Ta (Text)
+    - Cu (Text)
+    - Co (Text)
+    - Mg (Text)
+    - Ca (Text)
+    - Pb (Text)
+    - Bi (Text)
+    - Se (Text)
+    - Sn (Text)
+    - Y (Text)
+    - H2 (Text)
+    - Cb (Text)
+    - Ta (Text)
+    - Hardness (Text)
+    - MinShear (Text)
+    - MaxShear (Text)
+    - KaShear (Text)
+    - X1-KasShear (Text)
+    - MinTensile (Text)
+    - MaxTensile (Text)
+    - KaTensile (Text)
+    - X1-KasTensile (Text)
+    - FPAverage (Text)
+    - FPMin (Text)
+    - FPHigh (Text)
+    - FPLow (Text)
+    - HeatTreatSpec (Text)
+    - FinishSpec (Text)
+    - LubSpec (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+    - Discontinues (Text)
+    - H2ppm (Text)
+    - SRTemp (Text)
+    - SRLoad (Text)
+    - SRTime (Unknown (20))
+    - TTSampleSize (Integer)
+    - TTTorque (Text)
+    - SDSampleSize (Long)
+    - SDTorque (Text)
+    - SDSusLoad (Text)
+    - SDLoad (Text)
+    - SDTime (Unknown (20))
+    - PartType (Text)
+    - Comment1 (Text)
+    - Comment2 (Text)
+    - Comment3 (Text)
+    - ProcessInstr1 (Text)
+    - ProcessInstr2 (Text)
+    - ProcessInstr3 (Text)
+    - ProcessInstr4 (Text)
+    - ProcessInstr5 (Text)
+    - ProcessInstr6 (Text)
+    - ProcessInstr7 (Text)
+    - ProcessInstr8 (Text)
+    - ProcessInstr9 (Text)
+    - ProcessInstr10 (Text)
+    - EntryBy (Text)
+    - Source (Text)
+    - C29 (Text)
+    - C30 (Text)
+    - C31 (Text)
+    - Unit1 (Text)
+    - Unit2 (Text)
+    - FPAverageLife (Text)
+    - ProcessInstr11 (Text)
+    - ProcessInstr12 (Text)
+    - ProcessInstr13 (Text)
+    - ProcessInstr14 (Text)
+    - ProcessInstr15 (Text)
+    - ProcessInstr16 (Text)
+    - ProcessInstr17 (Text)
+    - ProcessInstr18 (Text)
+    - ProcessInstr19 (Text)
+    - ProcessInstr20 (Text)
+    - ProcessInstr21 (Text)
+    - TSO (Text)
+    - ProcessInstr22 (Text)
+    - ProcessInstr23 (Text)
+    - ProcessInstr24 (Text)
+    - KrTensile (Text)
+    - X1-KrSTensile (Text)
+    - KtTensile (Text)
+    - X1-KtSTensile (Text)
+    - KrShear (Text)
+    - X1-KrSShear (Text)
+    - KtShear (Text)
+    - X1-KtSShear (Text)
+    - Address (Memo)
+    - Notes (Memo)
+    - Discontinuity2 (Text)
+    - Discontinuity3 (Text)
+    - Discontinuity4 (Text)
+    - RevDate1 (Date)
+    - RevDate2 (Date)
+    - RevDate3 (Date)
+    - RevDate4 (Date)
+    - RevNote1 (Text)
+    - RevNote2 (Text)
+    - RevNote3 (Text)
+    - RevNote4 (Text)
+    - Discontinuity1 (Text)
+    - TensileMinRqd2 (Text)
+    - TensileMaxRqd2 (Text)
+    - TensileKa2 (Text)
+    - TensileKaS2 (Text)
+    - TensileKr2 (Text)
+    - TensileKrS2 (Text)
+    - TensileKt2 (Text)
+    - TensileKtS2 (Text)
+    - MicrosEtchant1 (Text)
+    - MicrosEtchant2 (Text)
+    - GrainSize (Text)
+    - TTCW (Text)
+    - TTCCW (Text)
+    - TTEndLoad (Text)
+    - MicrosEtchant3 (Text)
+    - HardnessLow (Text)
+    - HardnessHigh (Text)
+    - Diameter-Decimal (Double)
+    - TensileMinRqd3 (Text)
+    - TensileMaxRqd3 (Text)
+    - TensileKa3 (Text)
+    - TensileKaS3 (Text)
+    - TensileKr3 (Text)
+    - TensileKrS3 (Text)
+    - TensileKt3 (Text)
+    - TensileKtS3 (Text)
+
+  INDEXES:
+    - PK_TblCertificationMasterN (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblCertRecord
+  Type: LINKED
+  Connect: ODBC;DSN=Lab_SQL;Description=Lab on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=lab
+  Source Table: dbo.TblCertRecord1
+
+  FIELDS:
+    - LotNumber (Text) NOT NULL
+    - Job (Text)
+    - StockCode (Text)
+    - Revision (Text)
+    - CustomerPartNumber (Text)
+    - Revision2 (Text)
+    - MfgDate (Text)
+    - Customer (Text)
+    - LotSize (Long)
+    - Material (Text)
+    - MaterialSpec (Text)
+    - HeatNumber (Text)
+    - Hardness (Text)
+    - Diameter-Decimal (Double)
+    - Hydrogen (Text)
+    - HDDate (Text)
+    - AlloyVerDate (Text)
+    - Description (Text)
+    - ThdClass (Text)
+    - TSO (Text)
+    - Printed (Boolean)
+    - EntryBy (Text)
+    - MilSpec (Text)
+    - HeatTreatSpec (Text)
+    - FinishSpec (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+    - LubSpec (Text)
+    - ProcSpec (Text)
+    - Shear (Text)
+    - ShearQty (Long)
+    - ShearNotes (Text)
+    - Tensile (Text)
+    - TensileQty (Long)
+    - TensileNotes (Text)
+    - Fatigue (Text)
+    - FatigueQty (Long)
+    - FatigueNotes (Text)
+    - FatigueAveRqd (Text)
+    - FPMin (Text)
+    - FatigueMaxRqd (Text)
+    - FPHigh (Text)
+    - FPLow (Text)
+    - Line1 (Text)
+    - Line2 (Text)
+    - Line3 (Text)
+    - Line4 (Text)
+    - Line5 (Text)
+    - Line6 (Text)
+    - Line7 (Text)
+    - Line8 (Text)
+    - ApproveDate (Text)
+    - ApproveLabTech (Integer)
+    - ApprovePass (Text)
+    - ApproveDR (Text)
+    - N1 (Text)
+    - N2 (Text)
+    - EntryDate (Date)
+    - EHADiameter (Integer)
+    - EHAArea (Currency)
+    - EHAMinLoad1 (Unknown (20))
+    - EHAMinLoad2 (Unknown (20))
+    - EHAMinLoad3 (Unknown (20))
+    - EHALoad1 (Unknown (20))
+    - EHALoad2 (Unknown (20))
+    - EHALoad3 (Unknown (20))
+    - EHAResult1 (Unknown (20))
+    - EHAResult2 (Unknown (20))
+    - EHAResult3 (Unknown (20))
+    - EHADate (Text)
+    - EHALabTech (Integer)
+    - EHAPass (Text)
+    - EHADR (Text)
+    - Macros (Text)
+    - MacrosDate (Text)
+    - MacrosLabTech (Integer)
+    - MacrosPass (Text)
+    - MacrosDR (Text)
+    - EHATestLab (Text)
+    - EHACertNo (Text)
+    - EHAMachine (Text)
+    - MacrosEtchant (Text)
+    - CustomerPartNumber3 (Text)
+    - Revision3 (Text)
+    - CustomerPartNumber4 (Text)
+    - Revision4 (Text)
+    - CustomerPartNumber5 (Text)
+    - Revision5 (Text)
+    - CustomerPartNumber6 (Text)
+    - Revision6 (Text)
+    - CustomerPartNumber7 (Text)
+    - Revision7 (Text)
+
+  INDEXES:
+    - PK_TblCertRecord1 (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblDockingEmployee
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblDockingEmployee
+
+  FIELDS:
+    - UserName (Text) NOT NULL
+
+  INDEXES:
+    - aaaaadbo_TblDockingEmployee_PK (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblPallet
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblPallet
+
+  FIELDS:
+    - PalletNo (Long) NOT NULL
+    - Description (Text)
+    - Complete (Text)
+
+  INDEXES:
+    - PK_TblPallet (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblPassword
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblPassword
+
+  FIELDS:
+    - UserName (Text) NOT NULL
+    - KeyCode (Text)
+    - SuperUser (Text)
+
+  INDEXES:
+    - PK_TblPassword (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblShippingBarcodeLabel
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShippingBarcodeLabel
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - IntCustomer (Integer)
+    - LabelName (Text)
+
+  INDEXES:
+    - PK_TblBarcodeLabel (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblShippingLogsArchive
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShippingLogsArchive
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateLog (Date) NOT NULL
+
+  INDEXES:
+    - PKL1_DispatchNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_TblShippingRecordsArchive
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShippingRecordsArchive
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - ShipTo (Text)
+    - ShipToAddr1 (Text)
+    - ShipToAddr2 (Text)
+    - ShipToAddr3 (Text)
+    - ShipToCity (Text)
+    - ShipToState (Text)
+    - ShipToPostalCode (Text)
+    - SoldTo (Text)
+    - SoldToAddr1 (Text)
+    - SoldToAddr2 (Text)
+    - SoldToAddr3 (Text)
+    - SoldToCity (Text)
+    - SoldToState (Text)
+    - SoldToPostalCode (Text)
+    - PO (Text)
+    - POLine (Byte)
+    - Terms (Text)
+    - Carrier (Text)
+    - OrderQty (Long)
+    - ShipQty (Long)
+    - StockCode (Text)
+    - Uom (Text)
+    - StockCodeDes (Text)
+    - RoyalCode (Text)
+    - Lot (Text)
+    - TotalWt (Single)
+    - SalesOrder (Text) NOT NULL
+    - ShippedBy (Text)
+    - DateShip (Date)
+    - TimeShip (Date)
+    - DateArrive (Date)
+    - SCAC (Text)
+    - SourceAccepted (Text)
+    - DateCurrent (Date)
+    - TimeCurrent (Date)
+    - NoBox1 (Integer)
+    - NoBox2 (Integer)
+    - NoBox3 (Integer)
+    - NoBox4 (Integer)
+    - Type1 (Text)
+    - Type2 (Text)
+    - Type3 (Text)
+    - Type4 (Text)
+    - Qty1 (Integer)
+    - Qty2 (Integer)
+    - Qty3 (Integer)
+    - Qty4 (Integer)
+    - NoBoxTotal (Byte)
+    - QtyTotal (Long)
+    - ShipVia (Text)
+    - LblPrinted (Boolean)
+    - LblDatePrinted (Date)
+    - LblReprinted (Boolean)
+    - LblDateReprinted (Date)
+    - ASNSent (Boolean)
+    - ASNSentDateTime (Text)
+    - Cancel (Boolean)
+    - DateCancelled (Date)
+    - BillOfLading (Text)
+    - Hold (Boolean)
+    - DateHeld (Date)
+    - ASN (Boolean)
+    - Wt1 (Single)
+    - Wt2 (Single)
+    - Wt3 (Single)
+    - Wt4 (Single)
+    - MCustRequestDat (Date)
+    - Revision (Text)
+    - TSO (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+    - DivisionCode (Text)
+    - ScheduleB (Text)
+    - ECCN (Text)
+
+  INDEXES:
+    - PK1_DispatchNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_vw_Tbl_Boeing_Spirit_ASN
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.vw_Tbl_Boeing_Spirit_ASN
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - BoeingISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - TypeIdentifier (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromState (Text)
+    - ShipFromPostalCode (Text)
+    - MinMax (Text)
+    - BuyerMPID (Text)
+    - SupplierMPID (Text)
+    - ASN2 (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+
+----------------------------------------------------------------------
+
+TABLE: dbo_vw_Tbl_Boeing_Spirit_ASN_Local
+  Type: LOCAL
+  Records: 25
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - BoeingISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - TypeIdentifier (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromState (Text)
+    - ShipFromPostalCode (Text)
+    - MinMax (Text)
+    - BuyerMPID (Text)
+    - SupplierMPID (Text)
+    - ASN2 (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+    - __uniqueindex (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: dbo_WipMaster
+  Type: LINKED
+  Connect: ODBC;DSN=SysproPrograms;Description=Syspro Programs on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=SysproCompany1
+  Source Table: dbo.WipMaster
+
+  FIELDS:
+    - Job (Text) NOT NULL
+    - JobDescription (Text) NOT NULL
+    - JobClassification (Text) NOT NULL
+    - JobType (Text) NOT NULL
+    - MasterJob (Text) NOT NULL
+    - Priority (Unknown (20)) NOT NULL
+    - StockCode (Text) NOT NULL
+    - StockDescription (Text) NOT NULL
+    - Warehouse (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - CustomerName (Text) NOT NULL
+    - JobTenderDate (Date)
+    - JobDeliveryDate (Date)
+    - JobStartDate (Date)
+    - ActCompleteDate (Date)
+    - Complete (Text) NOT NULL
+    - SeqCheckReq (Text) NOT NULL
+    - DateCalcMethod (Text) NOT NULL
+    - ExpLabour (Unknown (20)) NOT NULL
+    - ExpMaterial (Unknown (20)) NOT NULL
+    - QtyToMake (Unknown (20)) NOT NULL
+    - QtyManufactured (Unknown (20)) NOT NULL
+    - Source (Text) NOT NULL
+    - EstSourceNum (Text) NOT NULL
+    - NextDetailLine (Unknown (20)) NOT NULL
+    - PctCompleteFlag (Unknown (20)) NOT NULL
+    - PrtFactDoc1 (Text) NOT NULL
+    - PrtFactDoc2 (Text) NOT NULL
+    - PrtFactDoc3 (Text) NOT NULL
+    - PrtFactDoc4 (Text) NOT NULL
+    - SellingPrice (Unknown (20)) NOT NULL
+    - AddLabPct (Unknown (20)) NOT NULL
+    - AddMatPct (Unknown (20)) NOT NULL
+    - ProfitPct (Unknown (20)) NOT NULL
+    - SalesOrder (Text) NOT NULL
+    - MaterialBilled (Unknown (20)) NOT NULL
+    - LabourBilled (Unknown (20)) NOT NULL
+    - NextOpForAll (Unknown (20)) NOT NULL
+    - HighestOpPosted (Unknown (20)) NOT NULL
+    - TotalQtyScrapped (Unknown (20)) NOT NULL
+    - ConfirmedFlag (Text) NOT NULL
+    - HoldFlag (Text) NOT NULL
+    - JobCreatedStruc (Text) NOT NULL
+    - LstOrderCreated (Text) NOT NULL
+    - TraceableType (Text) NOT NULL
+    - NxtLinePartBook (Unknown (20)) NOT NULL
+    - Route (Text) NOT NULL
+    - WipCtlGlCode (Text) NOT NULL
+    - Decimals (Unknown (20)) NOT NULL
+    - SalesOrderLine (Unknown (20)) NOT NULL
+    - MatCostToDate1 (Unknown (20)) NOT NULL
+    - MatCostToDate2 (Unknown (20)) NOT NULL
+    - MatCostToDate3 (Unknown (20)) NOT NULL
+    - LabCostToDate1 (Unknown (20)) NOT NULL
+    - LabCostToDate2 (Unknown (20)) NOT NULL
+    - LabCostToDate3 (Unknown (20)) NOT NULL
+    - HrsBookToDate1 (Unknown (20)) NOT NULL
+    - HrsBookToDate2 (Unknown (20)) NOT NULL
+    - HrsBookToDate3 (Unknown (20)) NOT NULL
+    - MatValueIssues1 (Unknown (20)) NOT NULL
+    - MatValueIssues2 (Unknown (20)) NOT NULL
+    - MatValueIssues3 (Unknown (20)) NOT NULL
+    - LabValueIssues1 (Unknown (20)) NOT NULL
+    - LabValueIssues2 (Unknown (20)) NOT NULL
+    - LabValueIssues3 (Unknown (20)) NOT NULL
+    - NarrationNum (Unknown (20)) NOT NULL
+    - ReqPlnFlag (Text) NOT NULL
+    - DateJobLstUpd (Date)
+    - TimeJobLstUpd (Unknown (20)) NOT NULL
+    - HierarchyFlag (Text) NOT NULL
+    - NextLineHier (Unknown (20)) NOT NULL
+    - EstTrailLoad (Text) NOT NULL
+    - OrdEntSource (Text) NOT NULL
+    - Version (Text) NOT NULL
+    - Release (Text) NOT NULL
+    - AllocationLine (Text) NOT NULL
+    - PurgeJob (Text) NOT NULL
+    - HierarchyJob (Text) NOT NULL
+    - MrpFromJob (Text) NOT NULL
+    - MrpToJob (Text) NOT NULL
+    - OrigDueDate (Date)
+    - GrossFlg (Text) NOT NULL
+    - GrossQty (Unknown (20)) NOT NULL
+    - ExpLabCurrent (Unknown (20)) NOT NULL
+    - ExpMatCurrent (Unknown (20)) NOT NULL
+    - ReservedLotSerFlag (Text) NOT NULL
+    - NotionalPart (Text) NOT NULL
+    - CoProductCostMet (Text) NOT NULL
+    - CoProductCostVal (Text) NOT NULL
+    - CoProductType (Text) NOT NULL
+    - CapexCode (Text) NOT NULL
+    - CapexLine (Unknown (20)) NOT NULL
+    - UomFlag (Text) NOT NULL
+    - ConvFactUom (Unknown (20)) NOT NULL
+    - ConvMulDiv (Text) NOT NULL
+    - ScheduleFlag (Text) NOT NULL
+    - SchStartDate (Date)
+    - SchStartTime (Unknown (20)) NOT NULL
+    - SchEndDate (Date)
+    - SchEndTime (Unknown (20)) NOT NULL
+    - QtyToMakeEnt (Unknown (20)) NOT NULL
+    - QtyManufacturedEnt (Unknown (20)) NOT NULL
+    - TotQtyScrappedEnt (Unknown (20)) NOT NULL
+    - GrossQtyEnt (Unknown (20)) NOT NULL
+    - ProductCode (Text) NOT NULL
+    - LibraryCode (Text) NOT NULL
+    - TimeStamp (Unknown (9))
+
+  INDEXES:
+    - WipMasterIdxActive (UNIQUE)
+    - WipMasterIdxCapex (UNIQUE)
+    - WipMasterIdxCus (UNIQUE)
+    - WipMasterIdxName (UNIQUE)
+    - WipMasterIdxSord (UNIQUE)
+    - WipMasterIdxStk (UNIQUE)
+    - WipMasterKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: ShippingRecords
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.ShippingRecords
+
+  FIELDS:
+    - ShipDate (Date)
+    - DispatchNote (Text)
+    - ProposedShipDate (Date)
+    - ShipBy (Text)
+    - Carrier (Text)
+    - ShipID (Long) NOT NULL
+    - Void (Boolean)
+
+  INDEXES:
+    - PK_ShippingRecords (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: SwitchItems
+  Type: LOCAL
+  Records: 8
+
+  FIELDS:
+    - ControlID (Long)
+    - ItemNumber (Integer) DEFAULT 0
+    - ItemText (Text)
+    - Command (Integer)
+    - Argument (Text)
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: tbl_BoxSize
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.tbl_BoxSize
+
+  FIELDS:
+    - Seq (Text) NOT NULL
+    - BoxSize (Text)
+
+  INDEXES:
+    - PK_tbl_BoxSize (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: Tbl_BoxSize1
+  Type: LOCAL
+  Records: 15
+
+  FIELDS:
+    - Seq (Text) NOT NULL
+    - BoxSize (Text) NOT NULL
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblAIC-Boeing
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblAIC-Boeing
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - BoeingISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - TransactionType (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromState (Text)
+    - ShipFromPostalCode (Text)
+    - MinMax (Text)
+    - BuyerMPID (Text)
+    - SupplierMPID (Text)
+    - ASN2 (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+    - aaaaaTblAIC-Boeing_PK (PRIMARY KEY) (UNIQUE)
+    - DivisionID
+    - PartnerID
+    - RecordID
+    - ShipFromPostalCode
+    - SupplierCode
+    - WhseCode
+
+----------------------------------------------------------------------
+
+TABLE: TblAIC-Boeing1_10-23-17
+  Type: LOCAL
+  Records: 22
+
+  FIELDS:
+    - Customer (Text)
+    - Name (Text)
+    - BoeingISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - TransactionType (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromState (Text)
+    - ShipFromPostalCode (Text)
+    - MinMax (Text)
+    - BuyerMPID (Text)
+    - SupplierMPID (Text)
+    - ASN2 (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+
+----------------------------------------------------------------------
+
+TABLE: TblAIC-Boeing-Source
+  Type: LOCAL
+  Records: 22
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - BoeingISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - TransactionType (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromState (Text)
+    - ShipFromPostalCode (Text)
+    - MinMax (Text)
+    - BuyerMPID (Text)
+    - SupplierMPID (Text)
+    - ASN2 (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+    - aaaaaTblAIC-Boeing_PK (PRIMARY KEY) (UNIQUE)
+    - DivisionID
+    - PartnerID
+    - RecordID
+    - ShipFromPostalCode
+    - SupplierCode
+    - WhseCode
+
+----------------------------------------------------------------------
+
+TABLE: TblAIC-MinMax
+  Type: LOCAL
+  Records: 8
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblAIC-Spirit
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblAIC-Spirit
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Name (Text)
+    - SpiritISA (Text)
+    - DivisionID (Text)
+    - DeliveryMethod (Text)
+    - WarehouseCode (Text)
+    - RecordIdentifier (Text)
+    - AICISA (Text)
+    - SupplierCode (Text)
+    - ShipFrom (Text)
+    - ShipFromAddr1 (Text)
+    - ShipFromAddr2 (Text)
+    - ShipFromAddr3 (Text)
+    - ShipFromCity (Text)
+    - ShipFromPostalCode (Text)
+    - ShipFromState (Text)
+    - MinMax (Text)
+    - Loc (Text)
+    - POLine1 (Integer)
+    - SourceAccepted1 (Text)
+    - DateArrive1 (Integer)
+    - Carrier1 (Text)
+    - ShipVia1 (Text)
+    - ShipToAddr11 (Text)
+    - ShipToAddr22 (Text)
+    - ShipToAddr33 (Text)
+    - ShipToCity1 (Text)
+    - ASNLblName (Text)
+    - ASN787 (Text)
+
+  INDEXES:
+    - aaaaaTblAIC-Spirit_PK (PRIMARY KEY) (UNIQUE)
+    - DivisionID
+    - PartnerID
+    - RecordID
+    - ShipFromPostalCode
+    - SupplierCode
+    - WhseCode
+
+----------------------------------------------------------------------
+
+TABLE: TblBoxSize
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblBoxSize
+
+  FIELDS:
+    - BoxSize (Text) NOT NULL
+
+  INDEXES:
+    - PK_TblBoxSize (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchLoginWarehouse
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblDispatchLoginWarehouse
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateTimeLogIn (Date)
+    - EmpID (Long)
+
+  INDEXES:
+    - PK_TblDispatchLoginWarehouse (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchLoginWarehouse_local
+  Type: LOCAL
+  Records: 17
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateTimeLogIn (Date)
+    - EmpID (Long)
+
+  INDEXES:
+    - EmpID
+    - PK_TblDispatchLoginWarehouse (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchLogOutWarehouse
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblDispatchLogOutWarehouse
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateTimeLogOut (Date)
+    - EmpID (Long)
+
+  INDEXES:
+    - PK_TblDispatchLogOutWarehouse (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchLogOutWarehouse_local
+  Type: LOCAL
+  Records: 6
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateTimeLogOut (Date)
+    - EmpID (Long)
+
+  INDEXES:
+    - EmpID
+    - PK_TblDispatchLogOutWarehouse (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchNote
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - StockCode (Text)
+    - Customer (Text)
+    - CustomerName (Text)
+    - Warehouse (Text)
+    - Status (Text)
+    - CustomerRequestDate (Date)
+    - DateReceived (Date)
+    - Cancel (Text)
+    - ReasonCancel (Text)
+    - DateCancelled (Date)
+    - CancelledBy (Text)
+    - LotPull (Text)
+    - LotPullDate (Date)
+    - LotPrepack (Text)
+    - DatePrepack (Date)
+    - PrepackedBy (Text)
+    - Remarks (Text)
+    - DateRestock (Date)
+    - RestockBoxesTotal (Long) DEFAULT 0
+    - RestockBins (Text)
+    - RestockedBy (Text)
+    - DateRestockShip (Date)
+    - DateShipped (Date)
+    - ShippedBy (Text)
+    - NoBoxTotal (Integer) DEFAULT 0
+    - QtyTotal (Long) DEFAULT 0
+    - NoBox1 (Integer) DEFAULT 0
+    - NoBox2 (Integer) DEFAULT 0
+    - NoBox3 (Integer) DEFAULT 0
+    - NoBox4 (Integer) DEFAULT 0
+    - NoBox5 (Integer) DEFAULT 0
+    - NoBox6 (Integer) DEFAULT 0
+    - Bin1 (Text)
+    - Bin2 (Text)
+    - Bin3 (Text)
+    - Bin4 (Text)
+    - Bin5 (Text)
+    - Bin6 (Text)
+    - Qty1 (Long) DEFAULT 0
+    - Qty2 (Long) DEFAULT 0
+    - Qty3 (Long) DEFAULT 0
+    - Qty4 (Long) DEFAULT 0
+    - Qty5 (Long) DEFAULT 0
+    - Qty6 (Long) DEFAULT 0
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchNoteBins
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - DispatchNote (Text)
+    - Bin (Text)
+    - Quantity (Long) DEFAULT 0
+    - BoxNo (Integer) DEFAULT 0
+
+  INDEXES:
+
+----------------------------------------------------------------------
+
+TABLE: TblDispatchNotePrint
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - DispatchNote (Text)
+    - Bin (Text)
+    - Qty (Long) DEFAULT 0
+    - BoxNo (Integer) DEFAULT 0
+
+  INDEXES:
+
+----------------------------------------------------------------------
+
+TABLE: TblDivisionCode
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblDivisionCode
+
+  FIELDS:
+    - DivisionCode (Text) NOT NULL
+
+  INDEXES:
+    - PK_TblCompanyCode (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDockingRecords
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblDockingRecords
+
+  FIELDS:
+    - Job (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - CustomerName (Text)
+    - GrossQty (Integer)
+    - StockCode (Text)
+    - Lot (Text) NOT NULL
+    - Warehouse (Text)
+    - PansReceived (Single)
+    - DateTimeReceived (Date)
+    - TimeReceived (Date)
+    - ReceivedBy (Text)
+    - NoBox1 (Integer)
+    - NoBox2 (Integer)
+    - NoBox3 (Integer)
+    - NoBox4 (Integer)
+    - NoBox5 (Integer)
+    - Bin1 (Text)
+    - Bin2 (Text)
+    - Bin3 (Text)
+    - Bin4 (Text)
+    - Bin5 (Text)
+    - Qty1 (Long)
+    - Qty2 (Long)
+    - Qty3 (Long)
+    - Qty4 (Long)
+    - Qty5 (Long)
+    - NoBoxTotal (Integer)
+    - QtyTotal (Long)
+    - StockedBy (Text)
+
+  INDEXES:
+    - aaaaaTblDockingRecords_PK (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblDockingRecords_Local
+  Type: LOCAL
+  Records: 2
+
+  FIELDS:
+    - Job (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - CustomerName (Text)
+    - GrossQty (Integer) DEFAULT 0
+    - StockCode (Text)
+    - Lot (Text)
+    - Warehouse (Text)
+    - PansReceived (Single)
+    - DateReceived (Date)
+    - TimeReceived (Date)
+    - ReceivedBy (Text)
+    - NoBox1 (Integer) DEFAULT 0
+    - NoBox2 (Integer) DEFAULT 0
+    - NoBox3 (Integer) DEFAULT 0
+    - NoBox4 (Integer) DEFAULT 0
+    - NoBox5 (Integer) DEFAULT 0
+    - Bin1 (Text)
+    - Bin2 (Text)
+    - Bin3 (Text)
+    - Bin4 (Text)
+    - Bin5 (Text)
+    - Qty1 (Long) DEFAULT 0
+    - Qty2 (Long) DEFAULT 0
+    - Qty3 (Long) DEFAULT 0
+    - Qty4 (Long) DEFAULT 0
+    - Qty5 (Long) DEFAULT 0
+    - NoBoxTotal (Integer) DEFAULT 0
+    - QtyTotal (Long) DEFAULT 0
+    - StockedBy (Text)
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblJobReceived
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - Job (Text)
+    - Lot (Text)
+    - DateStocked (Date)
+    - StockCode (Text)
+    - StockedBy (Text)
+    - Whse (Text)
+    - Void (Boolean)
+    - DateVoided (Date)
+    - VoidReason (Text)
+    - VoidedBy (Text)
+    - Revision (Text)
+
+  INDEXES:
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblJobReceivedBins
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - Job (Text)
+    - Bin (Text)
+    - Quantities (Integer) DEFAULT 0
+    - BoxNo (Integer) DEFAULT 0
+
+  INDEXES:
+
+----------------------------------------------------------------------
+
+TABLE: TblJobs
+  Type: LOCAL
+  Records: 4
+
+  FIELDS:
+    - Job (Text) NOT NULL
+    - Lot (Text)
+    - StockCode (Text)
+    - Revision (Text)
+    - Warehouse (Text)
+    - StockedBy (Text)
+    - DateStocked (Date)
+    - Cancel (Boolean)
+    - DateCancelled (Date)
+    - NoBoxTotal (Integer) DEFAULT 0
+    - QtyTotal (Long) DEFAULT 0
+    - NoBox1 (Integer) DEFAULT 0
+    - NoBox2 (Integer) DEFAULT 0
+    - NoBox3 (Integer) DEFAULT 0
+    - NoBox4 (Integer) DEFAULT 0
+    - NoBox5 (Integer) DEFAULT 0
+    - NoBox6 (Integer) DEFAULT 0
+    - Bin1 (Text)
+    - Bin2 (Text)
+    - Bin3 (Text)
+    - Bin4 (Text)
+    - Bin5 (Text)
+    - Bin6 (Text)
+    - Qty1 (Long) DEFAULT 0
+    - Qty2 (Long) DEFAULT 0
+    - Qty3 (Long) DEFAULT 0
+    - Qty4 (Long) DEFAULT 0
+    - Qty5 (Long) DEFAULT 0
+    - Qty6 (Long) DEFAULT 0
+
+  INDEXES:
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblOption
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblOption
+
+  FIELDS:
+    - Customer (Text) NOT NULL
+    - Option (Integer) NOT NULL
+    - Name (Text)
+    - City (Text)
+
+  INDEXES:
+    - aaaaaTblOption_PK (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblPackingSlip
+  Type: LOCAL
+  Records: 1
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - CustomerPoNumber (Text)
+    - Customer (Text)
+    - DispatchName (Text)
+    - DispatchAddress1 (Text)
+    - DispatchAddress2 (Text)
+    - DispatchAddress3 (Text)
+    - DispatchAddress4 (Text)
+    - DispatchAddress5 (Text)
+    - DispatchPostalCode (Text)
+    - Name (Text)
+    - SoldToAddr1 (Text)
+    - SoldToAddr2 (Text)
+    - SoldToAddr3 (Text)
+    - SoldToAddr4 (Text)
+    - SoldToAddr5 (Text)
+    - SoldPostalCode (Text)
+    - ShipVia (Text)
+    - SalesOrder (Text)
+    - SalesOrderLine (Unknown (20)) DEFAULT 0
+    - Description (Text)
+    - MOrderQty (Unknown (20))
+    - MStockQtyToShp (Unknown (20))
+    - MStockCode (Text)
+    - MStockDes (Text)
+    - MCustRequestDat (Date)
+    - StockCode (Text)
+    - MOrderUom (Text)
+    - Lot (Text)
+    - UserField1 (Text)
+    - NDTSpec (Text) DEFAULT ""
+    - NDTestSampleSize (Text) DEFAULT ""
+    - TSO (Text) DEFAULT ""
+    - POLine (Double)
+    - ScheduleB (Text)
+    - ECCN (Text)
+
+  INDEXES:
+    - DispatchPostalCode
+    - MStockCode
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+    - SoldPostalCode
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblPallet
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblPallet
+
+  FIELDS:
+    - PalletNo (Long) NOT NULL
+    - Description (Text)
+    - Complete (Text)
+
+  INDEXES:
+    - PK_TblPallet (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblPassword
+  Type: LOCAL
+  Records: 11
+
+  FIELDS:
+    - UserName (Text)
+    - KeyCode (Text)
+    - SuperUser (Text)
+
+  INDEXES:
+    - KeyCode
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblPasswordBK
+  Type: LOCAL
+  Records: 9
+
+  FIELDS:
+    - UserName (Text)
+    - KeyCode (Text)
+    - SuperUser (Text)
+
+  INDEXES:
+    - KeyCode
+    - PrimaryKey (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblPrintASNLabels
+  Type: LOCAL
+  Records: 21
+
+  FIELDS:
+    - BoxSequence (Integer) DEFAULT 0
+    - Customer (Text)
+    - ShipTo (Text)
+    - ShipToAddr1 (Text)
+    - ShipToAddr2 (Text)
+    - ShipToAddr3 (Text)
+    - ShipToCity (Text)
+    - ShipToState (Text)
+    - ShipToPostalCode (Text)
+    - LicensePlate (Text)
+    - PO (Text)
+    - DispatchNote (Text)
+    - StockCode (Text)
+    - QtyTotal (Long) DEFAULT 0
+    - NoBoxTotal (Integer)
+    - TotalWt (Single) DEFAULT 0
+    - POLine (Integer) DEFAULT 0
+    - DateShip (Date)
+    - DateArrive (Date)
+    - SourceAccepted (Text)
+    - Lot (Text)
+    - TSO (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+
+  INDEXES:
+    - ShipToPostalCode
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblPrintBarLabels
+  Type: LOCAL
+  Records: 1
+
+  FIELDS:
+    - BoxSequence (Integer) DEFAULT 0
+    - NoBoxTotal (Integer)
+    - Qty (Long)
+    - QtyTotal (Long) DEFAULT 0
+    - Customer (Text)
+    - ShipTo (Text)
+    - ShipToAddr1 (Text)
+    - ShipToAddr2 (Text)
+    - ShipToAddr3 (Text)
+    - ShipToCity (Text)
+    - ShipToState (Text)
+    - ShipToPostalCode (Text)
+    - PO (Text)
+    - POLine (Text)
+    - StockCode (Text)
+    - DispatchNote (Text)
+    - TotalWt (Single) DEFAULT 0
+    - DateShip (Date)
+    - DateArrive (Date)
+    - SCAC (Text)
+    - Uom (Text)
+    - Lot (Text)
+    - TSO (Text)
+    - Revision (Text)
+    - Wt (Single) DEFAULT 0
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+
+  INDEXES:
+    - ShipToPostalCode
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblPrintStockLabels
+  Type: LOCAL
+  Records: 0
+
+  FIELDS:
+    - Box (Integer) DEFAULT 0
+    - Warehouse (Text)
+    - StockCode (Text)
+    - Bin (Text)
+    - Qty (Long) DEFAULT 0
+    - Lot (Text)
+
+  INDEXES:
+    - StockCode
+
+----------------------------------------------------------------------
+
+TABLE: TblShipAddr
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShipAddr
+
+  FIELDS:
+    - ShipAddr1 (Text) NOT NULL
+    - Customer (Text) NOT NULL
+
+  INDEXES:
+    - aaaaaTblShipAddr_PK (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblShippingLogs
+  Type: LINKED
+  Connect: ODBC;DSN=AirIndustriesSQL;Description=Airindustries on AICX-SQL;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShippingLogs
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - DateLog (Date) NOT NULL
+
+  INDEXES:
+    - PKL_DispatchNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblShippingRecords
+  Type: LINKED
+  Connect: ODBC;DSN=airindustriesSQL;Description=AIC DB;Trusted_Connection=Yes;APP=Microsoft Office 2016;DATABASE=airindustries
+  Source Table: dbo.TblShippingRecords
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - ShipTo (Text)
+    - ShipToAddr1 (Text)
+    - ShipToAddr2 (Text)
+    - ShipToAddr3 (Text)
+    - ShipToCity (Text)
+    - ShipToState (Text)
+    - ShipToPostalCode (Text)
+    - SoldTo (Text)
+    - SoldToAddr1 (Text)
+    - SoldToAddr2 (Text)
+    - SoldToAddr3 (Text)
+    - SoldToCity (Text)
+    - SoldToState (Text)
+    - SoldToPostalCode (Text)
+    - PO (Text)
+    - POLine (Byte)
+    - Terms (Text)
+    - Carrier (Text)
+    - OrderQty (Long)
+    - ShipQty (Long)
+    - StockCode (Text)
+    - Uom (Text)
+    - StockCodeDes (Text)
+    - RoyalCode (Text)
+    - Lot (Text)
+    - TotalWt (Single)
+    - SalesOrder (Text)
+    - ShippedBy (Text)
+    - DateShip (Date)
+    - TimeShip (Date)
+    - DateArrive (Date)
+    - SCAC (Text)
+    - SourceAccepted (Text)
+    - DateCurrent (Date)
+    - TimeCurrent (Date)
+    - NoBox1 (Integer)
+    - NoBox2 (Integer)
+    - NoBox3 (Integer)
+    - NoBox4 (Integer)
+    - Type1 (Text)
+    - Type2 (Text)
+    - Type3 (Text)
+    - Type4 (Text)
+    - Qty1 (Integer)
+    - Qty2 (Integer)
+    - Qty3 (Integer)
+    - Qty4 (Integer)
+    - NoBoxTotal (Byte)
+    - QtyTotal (Long)
+    - ShipVia (Text)
+    - LblPrinted (Boolean)
+    - LblDatePrinted (Date)
+    - LblReprinted (Boolean)
+    - LblDateReprinted (Date)
+    - ASNSent (Boolean)
+    - ASNSentDateTime (Text)
+    - Cancel (Boolean)
+    - DateCancelled (Date)
+    - BillOfLading (Text)
+    - Hold (Boolean)
+    - DateHeld (Date)
+    - ASN (Boolean)
+    - Wt1 (Single)
+    - Wt2 (Single)
+    - Wt3 (Single)
+    - Wt4 (Single)
+    - MCustRequestDat (Date)
+    - Revision (Text)
+    - TSO (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+    - DivisionCode (Text)
+    - ScheduleB (Text)
+    - ECCN (Text)
+
+  INDEXES:
+    - PK_DispatchNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+
+TABLE: TblShippingRecords_Local
+  Type: LOCAL
+  Records: 3
+
+  FIELDS:
+    - DispatchNote (Text) NOT NULL
+    - Customer (Text) NOT NULL
+    - ShipTo (Text)
+    - ShipToAddr1 (Text)
+    - ShipToAddr2 (Text)
+    - ShipToAddr3 (Text)
+    - ShipToCity (Text)
+    - ShipToState (Text)
+    - ShipToPostalCode (Text)
+    - SoldTo (Text)
+    - SoldToAddr1 (Text)
+    - SoldToAddr2 (Text)
+    - SoldToAddr3 (Text)
+    - SoldToCity (Text)
+    - SoldToState (Text)
+    - SoldToPostalCode (Text)
+    - PO (Text)
+    - POLine (Byte)
+    - Terms (Text)
+    - Carrier (Text)
+    - OrderQty (Long)
+    - ShipQty (Long)
+    - StockCode (Text)
+    - Uom (Text)
+    - StockCodeDes (Text)
+    - RoyalCode (Text)
+    - Lot (Text)
+    - TotalWt (Single)
+    - SalesOrder (Text)
+    - ShippedBy (Text)
+    - DateShip (Date)
+    - TimeShip (Date)
+    - DateArrive (Date)
+    - SCAC (Text)
+    - SourceAccepted (Text)
+    - DateCurrent (Date)
+    - TimeCurrent (Date)
+    - NoBox1 (Integer)
+    - NoBox2 (Integer)
+    - NoBox3 (Integer)
+    - NoBox4 (Integer)
+    - Type1 (Text)
+    - Type2 (Text)
+    - Type3 (Text)
+    - Type4 (Text)
+    - Qty1 (Integer)
+    - Qty2 (Integer)
+    - Qty3 (Integer)
+    - Qty4 (Integer)
+    - NoBoxTotal (Byte)
+    - QtyTotal (Long)
+    - ShipVia (Text)
+    - LblPrinted (Boolean)
+    - LblDatePrinted (Date)
+    - LblReprinted (Boolean)
+    - LblDateReprinted (Date)
+    - ASNSent (Boolean)
+    - ASNSentDateTime (Text)
+    - Cancel (Boolean)
+    - DateCancelled (Date)
+    - BillOfLading (Text)
+    - Hold (Boolean)
+    - DateHeld (Date)
+    - ASN (Boolean)
+    - Wt1 (Single)
+    - Wt2 (Single)
+    - Wt3 (Single)
+    - Wt4 (Single)
+    - MCustRequestDat (Date)
+    - Revision (Text)
+    - TSO (Text)
+    - NDTestSpec (Text)
+    - NDTestSampleSize (Text)
+    - DivisionCode (Text)
+    - ScheduleB (Text)
+    - ECCN (Text)
+
+  INDEXES:
+    - PK_DispatchNote (PRIMARY KEY) (UNIQUE)
+
+----------------------------------------------------------------------
+

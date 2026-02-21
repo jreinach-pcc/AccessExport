@@ -1,0 +1,8 @@
+Report Name: ASNLbl_Spirit
+Date Exported: 2/21/2026 9:54:20 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: ASNLblSpirit
+  Has Module: False
+

@@ -1,0 +1,8 @@
+Report Name: BarCodeLblPeerless
+Date Exported: 2/21/2026 9:54:16 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: BarLblPeerless
+  Has Module: False
+

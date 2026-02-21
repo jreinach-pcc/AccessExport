@@ -1,0 +1,8 @@
+Report Name: DockingSlipList
+Date Exported: 2/21/2026 9:54:29 AM
+======================================================================
+
+PROPERTIES:
+  Record Source: QryPrintDockingSlipList
+  Has Module: False
+
